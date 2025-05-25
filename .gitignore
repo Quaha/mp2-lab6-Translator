@@ -1,0 +1,11 @@
+.vs/
+build/
+*.ipch
+*.obj
+*.exe
+*.pch
+*.sdf
+*.log
+*.user
+*.VC.db
+*.opensdf

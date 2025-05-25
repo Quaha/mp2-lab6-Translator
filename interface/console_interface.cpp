@@ -1,22 +1,31 @@
 ﻿#include <iostream>
-#include <antlr4-runtime.h>
-#include "MyGrammarLexer.h"
-#include "MyGrammarParser.h"
+#include <fstream>
 
-#include "empty.hpp"
+#include "antlr4-runtime.h"
+#include "CalcLexer.h"
+#include "CalcParser.h"
+#include "CalcEvalVisitor.hpp"
 
 int main() {
-    std::string input = "123;456;789";
 
-    antlr4::ANTLRInputStream inputStream(input);
-    MyGrammarLexer lexer(&inputStream);
-    antlr4::CommonTokenStream tokens(&lexer);
-    MyGrammarParser parser(&tokens);
+    while (true) {
+        std::string input;
 
-    antlr4::tree::ParseTree* tree = parser.program();
+        std::cin >> input;
 
-    MyListener listener;
-    antlr4::tree::ParseTreeWalker::DEFAULT.walk(&listener, tree);
+        antlr4::ANTLRInputStream stream(input);
 
-    return 0;
+        CalcLexer lexer(&stream);
+        antlr4::CommonTokenStream tokens(&lexer);
+        CalcParser parser(&tokens);
+
+        auto tree = parser.program();
+
+        CalcEvalVisitor visitor;
+        std::vector<int> result = std::any_cast<std::vector<int>>(visitor.visit(tree));
+
+        for (int value : result) {
+            std::cout << ">> " << value << std::endl;
+        }
+    }
 }
