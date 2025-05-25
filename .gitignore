@@ -1,6 +1,4 @@
-.vs/
 build/
-*.ipch
 *.obj
 *.exe
 *.pch
@@ -9,3 +7,13 @@ build/
 *.user
 *.VC.db
 *.opensdf
+*.ipch
+
+.vs/
+*.vcxproj.user
+
+core/antlr/
+
+external/antlr4-runtime-cpp/build/
+
+grammar/grammar_build/

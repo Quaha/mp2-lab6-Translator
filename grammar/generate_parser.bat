@@ -26,3 +26,5 @@ for %%f in (*.g4) do (
 popd
 
 echo Done. Sources in the folder "%OUTPUT_DIR%".
+
+pause

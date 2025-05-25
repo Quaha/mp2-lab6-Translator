@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/runtime/antlr4_tests[1]_tests.cmake")
-  include("C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/runtime/antlr4_tests[1]_tests.cmake")
-else()
-  add_test(antlr4_tests_NOT_BUILT antlr4_tests_NOT_BUILT)
-endif()
