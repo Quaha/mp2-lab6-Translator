@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/bf380bc5b06da0fc8f5c77341a642d3c/googletest-populate.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/e78caba7cfdd7e085274e1102bd85e20/googletest-populate-complete.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-build.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-configure.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-download.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-install.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-mkdir.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-patch.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-test.rule
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-update.rule

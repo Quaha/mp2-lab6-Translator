@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/runtime/CMakeLists.txt
+E:/ProgramFiles/CMake/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake
+E:/ProgramFiles/CMake/share/cmake-3.30/Modules/FetchContent.cmake
+E:/ProgramFiles/CMake/share/cmake-3.30/Modules/FetchContent/CMakeLists.cmake.in
+E:/ProgramFiles/CMake/share/cmake-3.30/Modules/GoogleTest.cmake

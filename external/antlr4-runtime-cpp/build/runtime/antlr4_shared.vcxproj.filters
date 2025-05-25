@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ANTLRErrorListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ANTLRErrorStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ANTLRFileStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ANTLRInputStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\BailErrorStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\BaseErrorListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\BufferedTokenStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\CharStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\CommonToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\CommonTokenFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\CommonTokenStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ConsoleErrorListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\DefaultErrorStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\DiagnosticErrorListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\Exceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\FailedPredicateException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\InputMismatchException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\IntStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\InterpreterRuleContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\Lexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\LexerInterpreter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\LexerNoViableAltException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ListTokenSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\NoViableAltException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ParserInterpreter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ParserRuleContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\ProxyErrorListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\RecognitionException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\Recognizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\RuleContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\RuleContextWithAltNum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\RuntimeMetaData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\Token.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\TokenSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\TokenStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\TokenStreamRewriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\UnbufferedCharStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\UnbufferedTokenStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\Vocabulary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\WritableToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATNConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATNConfigSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATNDeserializationOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATNDeserializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATNSimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATNState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ATNStateType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ActionTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\AmbiguityInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ArrayPredictionContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\AtomTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ContextSensitivityInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\DecisionEventInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\DecisionInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\DecisionState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\EpsilonTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ErrorInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LL1Analyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerATNConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerATNSimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerActionExecutor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerChannelAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerCustomAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerIndexedCustomAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerModeAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerMoreAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerPopModeAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerPushModeAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerSkipAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LexerTypeAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\LookaheadEventInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\NotSetTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\OrderedATNConfigSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ParseInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ParserATNSimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\PrecedencePredicateTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\PredicateEvalInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\PredicateTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\PredictionContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\PredictionContextCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\PredictionContextMergeCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\PredictionMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\ProfilingATNSimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\RangeTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\RuleTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\SemanticContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\SetTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\SingletonPredictionContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\StarLoopbackState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\Transition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\TransitionType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\atn\WildcardTransition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\dfa\DFA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\dfa\DFASerializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\dfa\DFAState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\dfa\LexerDFASerializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\internal\Synchronization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\misc\InterpreterDataReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\misc\Interval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\misc\IntervalSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\misc\MurmurHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\misc\Predicate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\support\Any.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\support\Arrays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\support\CPPUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\support\StringUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\support\Utf8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\ErrorNodeImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\IterativeParseTreeWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\ParseTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\ParseTreeListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\ParseTreeVisitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\ParseTreeWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\TerminalNodeImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\Trees.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\Chunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\ParseTreeMatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\ParseTreePattern.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\ParseTreePatternMatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\RuleTagToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\TagChunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\TextChunk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\pattern\TokenTagToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathLexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathLexerErrorListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathRuleAnywhereElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathRuleElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathTokenAnywhereElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathTokenElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathWildcardAnywhereElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\src\tree\xpath\XPathWildcardElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\runtime\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5A99F4AB-1BD2-3D51-A52C-8DD7BF4A16B2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

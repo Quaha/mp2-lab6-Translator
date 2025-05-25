@@ -1,0 +1,21 @@
+# ninja log v6
+5	76	7698199614733942	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	e789093ad08073aa
+5	76	7698199614733942	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	e789093ad08073aa
+77	2102	7698199634994648	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	586c16b94efbc243
+77	2102	7698199634994648	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	586c16b94efbc243
+2103	2168	7698199635654616	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	aea09a10e962c49
+2103	2168	7698199635654616	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	aea09a10e962c49
+2168	2231	7698199636274613	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	20ce2ed3414130dd
+2168	2231	7698199636274613	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	20ce2ed3414130dd
+2231	2295	7698199636924620	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	244ce916829bf52a
+2231	2295	7698199636924620	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	244ce916829bf52a
+2295	2359	7698199637564614	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	ee6387c55f75f823
+2295	2359	7698199637564614	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	ee6387c55f75f823
+2360	2422	7698199638194617	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	a5dbc6515cf4b75c
+2360	2422	7698199638194617	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	a5dbc6515cf4b75c
+2422	2484	7698199638814909	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	4413d4dfce6d2573
+2422	2484	7698199638814909	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	4413d4dfce6d2573
+2484	2573	7698199639704251	CMakeFiles/googletest-populate-complete	ec838afa8070cefa
+2484	2573	7698199639704251	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	ec838afa8070cefa
+2484	2573	7698199639704251	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	ec838afa8070cefa
+2484	2573	7698199639704251	C:/Users/Артем/Desktop/AntlrProj/antlr_runtime_source/antlr4-4.13.2/runtime/Cpp/out/build/x86-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	ec838afa8070cefa

@@ -1,0 +1,10 @@
+^C:\USERS\АРТЕМ\DESKTOP\MP2-LAB6-TRANSLATOR\EXTERNAL\ANTLR4-RUNTIME-CPP\BUILD\CMAKEFILES\13B3FACBB33A5A0E8D1BF5D426D6F2BB\GENERATE.STAMP.RULE
+setlocal
+E:\ProgramFiles\CMake\bin\cmake.exe -SC:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp -BC:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Артем/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/LIBANTLR4.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

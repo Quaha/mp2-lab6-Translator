@@ -1,0 +1,22 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x86-Debug",
+      "out\\install\\x86-Debug",
+      "out\\build\\x86-Release",
+      "out\\install\\x86-Release",
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug",
+      "out\\build\\x64-Release",
+      "out\\install\\x64-Release"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\demo",
+    "\\demo\\Windows",
+    "\\demo\\Windows\\antlr4-cpp-demo"
+  ],
+  "SelectedNode": "\\demo\\Windows\\antlr4-cpp-demo\\antlr4-cpp-demo-vs2022.vcxproj",
+  "PreviewInSolutionExplorer": false
+}

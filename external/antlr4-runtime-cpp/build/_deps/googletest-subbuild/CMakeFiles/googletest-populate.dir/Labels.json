@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/bf380bc5b06da0fc8f5c77341a642d3c/googletest-populate.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/e78caba7cfdd7e085274e1102bd85e20/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/\u0410\u0440\u0442\u0435\u043c/Desktop/mp2-lab6-Translator/external/antlr4-runtime-cpp/build/_deps/googletest-subbuild/CMakeFiles/4307068a4fa54ffe2fd97d7670093b4b/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

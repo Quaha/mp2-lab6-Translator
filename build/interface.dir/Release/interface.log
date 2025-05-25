@@ -1,0 +1,697 @@
+﻿  console_interface.cpp
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Exceptions.h(13,57): warning C4275: class "std::exception", не являющийся dll-интерфейсом, использован в качестве базового для dll-интерфейса class "antlr4::RuntimeException"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime_exception.h(49,24):
+       см. объявление "std::exception"
+      C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Exceptions.h(13,26):
+       см. объявление "antlr4::RuntimeException"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Exceptions.h(15,17): warning C4251: "antlr4::RuntimeException::_message": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::RuntimeException"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Exceptions.h(73,52): warning C4275: class "std::exception", не являющийся dll-интерфейсом, использован в качестве базового для dll-интерфейса class "antlr4::IOException"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vcruntime_exception.h(49,24):
+       см. объявление "std::exception"
+      C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Exceptions.h(73,26):
+       см. объявление "antlr4::IOException"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Exceptions.h(75,17): warning C4251: "antlr4::IOException::_message": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::IOException"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\IntStream.h(41,30): warning C4251: "antlr4::IntStream::UNKNOWN_SOURCE_NAME": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::IntStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ANTLRInputStream.h(21,20): warning C4251: "antlr4::ANTLRInputStream::_data": "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ANTLRInputStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ANTLRInputStream.h(28,17): warning C4251: "antlr4::ANTLRInputStream::name": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ANTLRInputStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ANTLRFileStream.h(27,17): warning C4251: "antlr4::ANTLRFileStream::_fileName": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ANTLRFileStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\misc\IntervalSet.h(33,27): warning C4251: "antlr4::misc::IntervalSet::_intervals": "std::vector<antlr4::misc::Interval,std::allocator<antlr4::misc::Interval>>" должен иметь dll-интерфейс для использования клиентами "antlr4::misc::IntervalSet"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::misc::Interval,std::allocator<antlr4::misc::Interval>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\DefaultErrorStrategy.h(462,41): warning C4251: "antlr4::DefaultErrorStrategy::_errorSymbols": "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::DefaultErrorStrategy"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\BufferedTokenStream.h(108,41): warning C4251: "antlr4::BufferedTokenStream::_tokens": "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::BufferedTokenStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\CommonToken.h(18,57): warning C4251: "antlr4::CommonToken::EMPTY_SOURCE": "std::pair<antlr4::TokenSource *,antlr4::CharStream *>" должен иметь dll-интерфейс для использования клиентами "antlr4::CommonToken"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\utility(247,8):
+       см. объявление "std::pair<antlr4::TokenSource *,antlr4::CharStream *>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\CommonToken.h(53,44): warning C4251: "antlr4::CommonToken::_source": "std::pair<antlr4::TokenSource *,antlr4::CharStream *>" должен иметь dll-интерфейс для использования клиентами "antlr4::CommonToken"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\utility(247,8):
+       см. объявление "std::pair<antlr4::TokenSource *,antlr4::CharStream *>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\CommonToken.h(61,17): warning C4251: "antlr4::CommonToken::_text": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::CommonToken"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\CommonTokenFactory.h(25,61): warning C4251: "antlr4::CommonTokenFactory::DEFAULT": "std::unique_ptr<antlr4::TokenFactory<antlr4::CommonToken>,std::default_delete<antlr4::TokenFactory<antlr4::CommonToken>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::CommonTokenFactory"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3332,7):
+       см. объявление "std::unique_ptr<antlr4::TokenFactory<antlr4::CommonToken>,std::default_delete<antlr4::TokenFactory<antlr4::CommonToken>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\FailedPredicateException.h(29,17): warning C4251: "antlr4::FailedPredicateException::_predicate": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::FailedPredicateException"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\ParseTree.h(39,30): warning C4251: "antlr4::tree::ParseTree::children": "std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::ParseTree"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\ParseTree.h(106,30): warning C4251: "antlr4::tree::ParseTreeTracker::_allocated": "std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::ParseTreeTracker"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ParserRuleContext.h(66,24): warning C4251: "antlr4::ParserRuleContext::exception": "std::exception_ptr" должен иметь dll-интерфейс для использования клиентами "antlr4::ParserRuleContext"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\exception(225,19):
+       см. объявление "std::exception_ptr"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ProxyErrorListener.h(18,36): warning C4251: "antlr4::ProxyErrorListener::_delegates": "std::set<antlr4::ANTLRErrorListener *,std::less<antlr4::ANTLRErrorListener *>,std::allocator<antlr4::ANTLRErrorListener *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ProxyErrorListener"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\set(51,7):
+       см. объявление "std::set<antlr4::ANTLRErrorListener *,std::less<antlr4::ANTLRErrorListener *>,std::allocator<antlr4::ANTLRErrorListener *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\internal\Synchronization.h(73,16): warning C4251: "antlr4::internal::Mutex::_impl": "std::mutex" должен иметь dll-интерфейс для использования клиентами "antlr4::internal::Mutex"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\mutex(98,19):
+       см. объявление "std::mutex"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\internal\Synchronization.h(109,23): warning C4251: "antlr4::internal::SharedMutex::_impl": "std::shared_mutex" должен иметь dll-интерфейс для использования клиентами "antlr4::internal::SharedMutex"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\shared_mutex(27,19):
+       см. объявление "std::shared_mutex"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\internal\Synchronization.h(141,20): warning C4251: "antlr4::internal::OnceFlag::_impl": "std::once_flag" должен иметь dll-интерфейс для использования клиентами "antlr4::internal::OnceFlag"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xcall_once.h(22,20):
+       см. объявление "std::once_flag"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Recognizer.h(149,81): warning C4251: "antlr4::Recognizer::_tokenTypeMapCache": "std::map<const antlr4::dfa::Vocabulary *,std::map<std::string_view,size_t,std::less<std::string_view>,std::allocator<std::pair<const std::string_view,size_t>>>,std::less<const antlr4::dfa::Vocabulary *>,std::allocator<std::pair<const antlr4::dfa::Vocabulary *const ,std::map<std::string_view,size_t,std::less<std::string_view>,std::allocator<std::pair<const std::string_view,size_t>>>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::Recognizer"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\map(72,7):
+       см. объявление "std::map<const antlr4::dfa::Vocabulary *,std::map<std::string_view,size_t,std::less<std::string_view>,std::allocator<std::pair<const std::string_view,size_t>>>,std::less<const antlr4::dfa::Vocabulary *>,std::allocator<std::pair<const antlr4::dfa::Vocabulary *const ,std::map<std::string_view,size_t,std::less<std::string_view>,std::allocator<std::pair<const std::string_view,size_t>>>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Recognizer.h(150,78): warning C4251: "antlr4::Recognizer::_ruleIndexMapCache": "std::map<std::vector<std::string,std::allocator<std::string>>,std::map<std::string,size_t,std::less<std::string>,std::allocator<std::pair<const std::string,size_t>>>,std::less<std::vector<std::string,std::allocator<std::string>>>,std::allocator<std::pair<const std::vector<std::string,std::allocator<std::string>>,std::map<std::string,size_t,std::less<std::string>,std::allocator<std::pair<const std::string,size_t>>>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::Recognizer"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\map(72,7):
+       см. объявление "std::map<std::vector<std::string,std::allocator<std::string>>,std::map<std::string,size_t,std::less<std::string>,std::allocator<std::pair<const std::string,size_t>>>,std::less<std::vector<std::string,std::allocator<std::string>>>,std::allocator<std::pair<const std::vector<std::string,std::allocator<std::string>>,std::map<std::string,size_t,std::less<std::string>,std::allocator<std::pair<const std::string,size_t>>>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Lexer.h(48,28): warning C4251: "antlr4::Lexer::token": "std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>" должен иметь dll-интерфейс для использования клиентами "antlr4::Lexer"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3332,7):
+       см. объявление "std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Lexer.h(75,25): warning C4251: "antlr4::Lexer::modeStack": "std::vector<size_t,std::allocator<size_t>>" должен иметь dll-интерфейс для использования клиентами "antlr4::Lexer"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<size_t,std::allocator<size_t>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Lexer.h(189,17): warning C4251: "antlr4::Lexer::_text": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::Lexer"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATN.h(42,29): warning C4251: "antlr4::atn::ATN::states": "std::vector<antlr4::atn::ATNState *,std::allocator<antlr4::atn::ATNState *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATN"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::ATNState *,std::allocator<antlr4::atn::ATNState *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATN.h(47,34): warning C4251: "antlr4::atn::ATN::decisionToState": "std::vector<antlr4::atn::DecisionState *,std::allocator<antlr4::atn::DecisionState *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATN"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::DecisionState *,std::allocator<antlr4::atn::DecisionState *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATN.h(50,35): warning C4251: "antlr4::atn::ATN::ruleToStartState": "std::vector<antlr4::atn::RuleStartState *,std::allocator<antlr4::atn::RuleStartState *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATN"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::RuleStartState *,std::allocator<antlr4::atn::RuleStartState *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATN.h(53,34): warning C4251: "antlr4::atn::ATN::ruleToStopState": "std::vector<antlr4::atn::RuleStopState *,std::allocator<antlr4::atn::RuleStopState *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATN"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::RuleStopState *,std::allocator<antlr4::atn::RuleStopState *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATN.h(68,25): warning C4251: "antlr4::atn::ATN::ruleToTokenType": "std::vector<size_t,std::allocator<size_t>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATN"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<size_t,std::allocator<size_t>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATN.h(72,41): warning C4251: "antlr4::atn::ATN::lexerActions": "std::vector<std::shared_ptr<const antlr4::atn::LexerAction>,std::allocator<std::shared_ptr<const antlr4::atn::LexerAction>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATN"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::shared_ptr<const antlr4::atn::LexerAction>,std::allocator<std::shared_ptr<const antlr4::atn::LexerAction>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATN.h(74,37): warning C4251: "antlr4::atn::ATN::modeToStartState": "std::vector<antlr4::atn::TokensStartState *,std::allocator<antlr4::atn::TokensStartState *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATN"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::TokensStartState *,std::allocator<antlr4::atn::TokensStartState *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNState.h(94,37): warning C4251: "antlr4::atn::ATNState::transitions": "std::vector<antlr4::atn::ConstTransitionPtr,std::allocator<antlr4::atn::ConstTransitionPtr>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNState"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::ConstTransitionPtr,std::allocator<antlr4::atn::ConstTransitionPtr>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNState.h(127,23): warning C4251: "antlr4::atn::ATNState::_nextTokenUpdated": "std::atomic<bool>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNState"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\atomic(2112,8):
+       см. объявление "std::atomic<bool>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContext.h(31,47): warning C4251: "antlr4::atn::PredictionContext::EMPTY": "std::shared_ptr<const antlr4::atn::PredictionContext>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredictionContext"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::PredictionContext>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContext.h(202,33): warning C4251: "antlr4::atn::PredictionContext::_hashCode": "std::atomic<unsigned __int64>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredictionContext"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\atomic(2112,8):
+       см. объявление "std::atomic<unsigned __int64>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextCache.h(59,69): warning C4251: "antlr4::atn::PredictionContextCache::_data": "std::unordered_set<std::shared_ptr<const antlr4::atn::PredictionContext>,antlr4::atn::PredictionContextCache::PredictionContextHasher,antlr4::atn::PredictionContextCache::PredictionContextComparer,std::allocator<std::shared_ptr<const antlr4::atn::PredictionContext>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredictionContextCache"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\unordered_set(59,7):
+       см. объявление "std::unordered_set<std::shared_ptr<const antlr4::atn::PredictionContext>,antlr4::atn::PredictionContextCache::PredictionContextHasher,antlr4::atn::PredictionContextCache::PredictionContextComparer,std::allocator<std::shared_ptr<const antlr4::atn::PredictionContext>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Vocabulary.h(170,36): warning C4251: "antlr4::dfa::Vocabulary::_literalNames": "std::vector<std::string,std::allocator<std::string>>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::Vocabulary"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::string,std::allocator<std::string>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Vocabulary.h(171,36): warning C4251: "antlr4::dfa::Vocabulary::_symbolicNames": "std::vector<std::string,std::allocator<std::string>>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::Vocabulary"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::string,std::allocator<std::string>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Vocabulary.h(172,36): warning C4251: "antlr4::dfa::Vocabulary::_displayNames": "std::vector<std::string,std::allocator<std::string>>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::Vocabulary"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::string,std::allocator<std::string>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\LexerInterpreter.h(32,23): warning C4251: "antlr4::LexerInterpreter::_grammarFileName": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::LexerInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\LexerInterpreter.h(38,27): warning C4251: "antlr4::LexerInterpreter::_decisionToDFA": "std::vector<antlr4::dfa::DFA,std::allocator<antlr4::dfa::DFA>>" должен иметь dll-интерфейс для использования клиентами "antlr4::LexerInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::dfa::DFA,std::allocator<antlr4::dfa::DFA>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(21,56): warning C4251: "std::enable_shared_from_this<antlr4::atn::SemanticContext>::_Wptr": "std::weak_ptr<_Ty>" должен иметь dll-интерфейс для использования клиентами "std::enable_shared_from_this<antlr4::atn::SemanticContext>"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(21,56): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(21,56): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(21,56): warning C4251:             _Ty=antlr4::atn::SemanticContext
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(21,56): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3126,7):
+       см. объявление "std::weak_ptr<_Ty>"
+          with
+          [
+              _Ty=antlr4::atn::SemanticContext
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(101,45): warning C4251: "antlr4::atn::SemanticContext::Empty::Instance": "std::shared_ptr<const _Ty>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::SemanticContext::Empty"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(101,45): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(101,45): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(101,45): warning C4251:             _Ty=antlr4::atn::SemanticContext
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(101,45): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const _Ty>"
+          with
+          [
+              _Ty=antlr4::atn::SemanticContext
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(194,45): warning C4251: "antlr4::atn::SemanticContext::AND::_opnds": "std::vector<std::shared_ptr<const _Ty>,std::allocator<std::shared_ptr<const _Ty>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::SemanticContext::AND"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(194,45): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(194,45): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(194,45): warning C4251:             _Ty=antlr4::atn::SemanticContext
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(194,45): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::shared_ptr<const _Ty>,std::allocator<std::shared_ptr<const _Ty>>>"
+          with
+          [
+              _Ty=antlr4::atn::SemanticContext
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(222,45): warning C4251: "antlr4::atn::SemanticContext::OR::_opnds": "std::vector<std::shared_ptr<const _Ty>,std::allocator<std::shared_ptr<const _Ty>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::SemanticContext::OR"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(222,45): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(222,45): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(222,45): warning C4251:             _Ty=antlr4::atn::SemanticContext
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SemanticContext.h(222,45): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::shared_ptr<const _Ty>,std::allocator<std::shared_ptr<const _Ty>>>"
+          with
+          [
+              _Ty=antlr4::atn::SemanticContext
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfig.h(60,34): warning C4251: "antlr4::atn::ATNConfig::context": "std::shared_ptr<const antlr4::atn::PredictionContext>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNConfig"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::PredictionContext>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfig.h(88,32): warning C4251: "antlr4::atn::ATNConfig::semanticContext": "std::shared_ptr<const _Ty>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNConfig"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfig.h(88,32): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfig.h(88,32): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfig.h(88,32): warning C4251:             _Ty=antlr4::atn::SemanticContext
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfig.h(88,32): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const _Ty>"
+          with
+          [
+              _Ty=antlr4::atn::SemanticContext
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfigSet.h(23,33): warning C4251: "antlr4::atn::ATNConfigSet::configs": "std::vector<std::shared_ptr<antlr4::atn::ATNConfig>,std::allocator<std::shared_ptr<antlr4::atn::ATNConfig>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNConfigSet"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::shared_ptr<antlr4::atn::ATNConfig>,std::allocator<std::shared_ptr<antlr4::atn::ATNConfig>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfigSet.h(121,33): warning C4251: "antlr4::atn::ATNConfigSet::_cachedHashCode": "std::atomic<unsigned __int64>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNConfigSet"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\atomic(2112,8):
+       см. объявление "std::atomic<unsigned __int64>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfigSet.h(138,21): warning C4251: "antlr4::atn::ATNConfigSet::_configLookup": "std::unordered_set<antlr4::atn::ATNConfig *,antlr4::atn::ATNConfigSet::ATNConfigHasher,antlr4::atn::ATNConfigSet::ATNConfigComparer,std::allocator<Key>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNConfigSet"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfigSet.h(138,21): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfigSet.h(138,21): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfigSet.h(138,21): warning C4251:             Key=antlr4::atn::ATNConfig *
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNConfigSet.h(138,21): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\unordered_set(59,7):
+       см. объявление "std::unordered_set<antlr4::atn::ATNConfig *,antlr4::atn::ATNConfigSet::ATNConfigHasher,antlr4::atn::ATNConfigSet::ATNConfigComparer,std::allocator<Key>>"
+          with
+          [
+              Key=antlr4::atn::ATNConfig *
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ListTokenSource.h(23,41): warning C4251: "antlr4::ListTokenSource::tokens": "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ListTokenSource"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ListTokenSource.h(32,23): warning C4251: "antlr4::ListTokenSource::sourceName": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ListTokenSource"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\NoViableAltException.h(32,28): warning C4251: "antlr4::NoViableAltException::_deadEndConfigs": "std::shared_ptr<antlr4::atn::ATNConfigSet>" должен иметь dll-интерфейс для использования клиентами "antlr4::NoViableAltException"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<antlr4::atn::ATNConfigSet>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Parser.h(412,29): warning C4251: "antlr4::Parser::_errHandler": "std::shared_ptr<antlr4::ANTLRErrorStrategy>" должен иметь dll-интерфейс для использования клиентами "antlr4::Parser"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<antlr4::ANTLRErrorStrategy>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Parser.h(421,22): warning C4251: "antlr4::Parser::_precedenceStack": "std::vector<int32_t,std::allocator<int>>" должен иметь dll-интерфейс для использования клиентами "antlr4::Parser"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<int32_t,std::allocator<int>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\Parser.h(434,44): warning C4251: "antlr4::Parser::_parseListeners": "std::vector<antlr4::tree::ParseTreeListener *,std::allocator<antlr4::tree::ParseTreeListener *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::Parser"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::tree::ParseTreeListener *,std::allocator<antlr4::tree::ParseTreeListener *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ParserInterpreter.h(107,23): warning C4251: "antlr4::ParserInterpreter::_grammarFileName": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ParserInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ParserInterpreter.h(110,30): warning C4251: "antlr4::ParserInterpreter::_ruleNames": "std::vector<std::string,std::allocator<std::string>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ParserInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::string,std::allocator<std::string>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ParserInterpreter.h(112,27): warning C4251: "antlr4::ParserInterpreter::_decisionToDFA": "std::vector<antlr4::dfa::DFA,std::allocator<antlr4::dfa::DFA>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ParserInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::dfa::DFA,std::allocator<antlr4::dfa::DFA>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ParserInterpreter.h(128,56): warning C4251: "antlr4::ParserInterpreter::_parentContextStack": "std::stack<std::pair<antlr4::ParserRuleContext *,size_t>,std::deque<std::pair<antlr4::ParserRuleContext *,size_t>,std::allocator<std::pair<antlr4::ParserRuleContext *,size_t>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ParserInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\stack(27,7):
+       см. объявление "std::stack<std::pair<antlr4::ParserRuleContext *,size_t>,std::deque<std::pair<antlr4::ParserRuleContext *,size_t>,std::allocator<std::pair<antlr4::ParserRuleContext *,size_t>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ParserInterpreter.h(142,33): warning C4251: "antlr4::ParserInterpreter::_overrideDecisionRoot": "std::shared_ptr<antlr4::InterpreterRuleContext>" должен иметь dll-интерфейс для использования клиентами "antlr4::ParserInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<antlr4::InterpreterRuleContext>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\ParserInterpreter.h(170,28): warning C4251: "antlr4::ParserInterpreter::_errorToken": "std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>" должен иметь dll-интерфейс для использования клиентами "antlr4::ParserInterpreter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3332,7):
+       см. объявление "std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\RuntimeMetaData.h(72,30): warning C4251: "antlr4::RuntimeMetaData::VERSION": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::RuntimeMetaData"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\TokenStreamRewriter.h(90,30): warning C4251: "antlr4::TokenStreamRewriter::DEFAULT_PROGRAM_NAME": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::TokenStreamRewriter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\TokenStreamRewriter.h(213,59): warning C4251: "antlr4::TokenStreamRewriter::_programs": "std::map<std::string,std::vector<antlr4::TokenStreamRewriter::RewriteOperation *,std::allocator<antlr4::TokenStreamRewriter::RewriteOperation *>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::vector<antlr4::TokenStreamRewriter::RewriteOperation *,std::allocator<antlr4::TokenStreamRewriter::RewriteOperation *>>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::TokenStreamRewriter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\map(72,7):
+       см. объявление "std::map<std::string,std::vector<antlr4::TokenStreamRewriter::RewriteOperation *,std::allocator<antlr4::TokenStreamRewriter::RewriteOperation *>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::vector<antlr4::TokenStreamRewriter::RewriteOperation *,std::allocator<antlr4::TokenStreamRewriter::RewriteOperation *>>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\TokenStreamRewriter.h(217,35): warning C4251: "antlr4::TokenStreamRewriter::_lastRewriteTokenIndexes": "std::map<std::string,size_t,std::less<std::string>,std::allocator<std::pair<const std::string,size_t>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::TokenStreamRewriter"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\map(72,7):
+       см. объявление "std::map<std::string,size_t,std::less<std::string>,std::allocator<std::pair<const std::string,size_t>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\UnbufferedCharStream.h(19,17): warning C4251: "antlr4::UnbufferedCharStream::name": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::UnbufferedCharStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\UnbufferedCharStream.h(57,20): warning C4251: "antlr4::UnbufferedCharStream::_data": "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>" должен иметь dll-интерфейс для использования клиентами "antlr4::UnbufferedCharStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\UnbufferedTokenStream.h(60,41): warning C4251: "antlr4::UnbufferedTokenStream::_tokens": "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::UnbufferedTokenStream"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>,std::allocator<std::unique_ptr<antlr4::Token,std::default_delete<antlr4::Token>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerAction.h(76,33): warning C4251: "antlr4::atn::LexerAction::_hashCode": "std::atomic<unsigned __int64>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::LexerAction"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\atomic(2112,8):
+       см. объявление "std::atomic<unsigned __int64>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ATNSimulator.h(20,37): warning C4251: "antlr4::atn::ATNSimulator::ERROR": "std::shared_ptr<antlr4::dfa::DFAState>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ATNSimulator"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<antlr4::dfa::DFAState>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ArrayPredictionContext.h(27,47): warning C4251: "antlr4::atn::ArrayPredictionContext::parents": "std::vector<std::shared_ptr<const antlr4::atn::PredictionContext>,std::allocator<std::shared_ptr<const antlr4::atn::PredictionContext>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ArrayPredictionContext"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::shared_ptr<const antlr4::atn::PredictionContext>,std::allocator<std::shared_ptr<const antlr4::atn::PredictionContext>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ArrayPredictionContext.h(30,25): warning C4251: "antlr4::atn::ArrayPredictionContext::returnStates": "std::vector<size_t,std::allocator<size_t>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ArrayPredictionContext"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<size_t,std::allocator<size_t>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredicateEvalInfo.h(23,38): warning C4251: "antlr4::atn::PredicateEvalInfo::semctx": "std::shared_ptr<const _Ty>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredicateEvalInfo"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredicateEvalInfo.h(23,38): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredicateEvalInfo.h(23,38): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredicateEvalInfo.h(23,38): warning C4251:             _Ty=antlr4::atn::SemanticContext
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredicateEvalInfo.h(23,38): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const _Ty>"
+          with
+          [
+              _Ty=antlr4::atn::SemanticContext
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\DecisionInfo.h(84,29): warning C4251: "antlr4::atn::DecisionInfo::SLL_MaxLookEvent": "std::shared_ptr<antlr4::atn::LookaheadEventInfo>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::DecisionInfo"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<antlr4::atn::LookaheadEventInfo>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\DecisionInfo.h(115,29): warning C4251: "antlr4::atn::DecisionInfo::LL_MaxLookEvent": "std::shared_ptr<antlr4::atn::LookaheadEventInfo>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::DecisionInfo"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<antlr4::atn::LookaheadEventInfo>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\DecisionInfo.h(122,41): warning C4251: "antlr4::atn::DecisionInfo::contextSensitivities": "std::vector<antlr4::atn::ContextSensitivityInfo,std::allocator<antlr4::atn::ContextSensitivityInfo>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::DecisionInfo"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::ContextSensitivityInfo,std::allocator<antlr4::atn::ContextSensitivityInfo>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\DecisionInfo.h(130,28): warning C4251: "antlr4::atn::DecisionInfo::errors": "std::vector<antlr4::atn::ErrorInfo,std::allocator<antlr4::atn::ErrorInfo>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::DecisionInfo"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::ErrorInfo,std::allocator<antlr4::atn::ErrorInfo>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\DecisionInfo.h(137,32): warning C4251: "antlr4::atn::DecisionInfo::ambiguities": "std::vector<antlr4::atn::AmbiguityInfo,std::allocator<antlr4::atn::AmbiguityInfo>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::DecisionInfo"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::AmbiguityInfo,std::allocator<antlr4::atn::AmbiguityInfo>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\DecisionInfo.h(145,36): warning C4251: "antlr4::atn::DecisionInfo::predicateEvals": "std::vector<antlr4::atn::PredicateEvalInfo,std::allocator<antlr4::atn::PredicateEvalInfo>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::DecisionInfo"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::PredicateEvalInfo,std::allocator<antlr4::atn::PredicateEvalInfo>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerATNConfig.h(37,42): warning C4251: "antlr4::atn::LexerATNConfig::_lexerActionExecutor": "std::shared_ptr<const antlr4::atn::LexerActionExecutor>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::LexerATNConfig"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::LexerActionExecutor>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerActionExecutor.h(20,66): warning C4251: "std::enable_shared_from_this<antlr4::atn::LexerActionExecutor>::_Wptr": "std::weak_ptr<_Ty>" должен иметь dll-интерфейс для использования клиентами "std::enable_shared_from_this<antlr4::atn::LexerActionExecutor>"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerActionExecutor.h(20,66): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerActionExecutor.h(20,66): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerActionExecutor.h(20,66): warning C4251:             _Ty=antlr4::atn::LexerActionExecutor
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerActionExecutor.h(20,66): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3126,7):
+       см. объявление "std::weak_ptr<_Ty>"
+          with
+          [
+              _Ty=antlr4::atn::LexerActionExecutor
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerActionExecutor.h(104,47): warning C4251: "antlr4::atn::LexerActionExecutor::_lexerActions": "std::vector<std::shared_ptr<const antlr4::atn::LexerAction>,std::allocator<std::shared_ptr<const antlr4::atn::LexerAction>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::LexerActionExecutor"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<std::shared_ptr<const antlr4::atn::LexerAction>,std::allocator<std::shared_ptr<const antlr4::atn::LexerAction>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerActionExecutor.h(105,33): warning C4251: "antlr4::atn::LexerActionExecutor::_hashCode": "std::atomic<unsigned __int64>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::LexerActionExecutor"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\atomic(2112,8):
+       см. объявление "std::atomic<unsigned __int64>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\LexerIndexedCustomAction.h(70,34): warning C4251: "antlr4::atn::LexerIndexedCustomAction::_action": "std::shared_ptr<const antlr4::atn::LexerAction>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::LexerIndexedCustomAction"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::LexerAction>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(45,39): warning C4251: "antlr4::dfa::DFAState::PredPrediction::pred": "std::shared_ptr<const _Ty>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::DFAState::PredPrediction"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(45,39): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(45,39): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(45,39): warning C4251:             _Ty=antlr4::atn::SemanticContext
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(45,39): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const _Ty>"
+          with
+          [
+              _Ty=antlr4::atn::SemanticContext
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(61,40): warning C4251: "antlr4::dfa::DFAState::configs": "std::unique_ptr<antlr4::atn::ATNConfigSet,std::default_delete<antlr4::atn::ATNConfigSet>>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::DFAState"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(3332,7):
+       см. объявление "std::unique_ptr<antlr4::atn::ATNConfigSet,std::default_delete<antlr4::atn::ATNConfigSet>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(67,36): warning C4251: "antlr4::dfa::DFAState::edges": "std::unordered_map<size_t,antlr4::dfa::DFAState *,std::hash<size_t>,std::equal_to<size_t>,std::allocator<std::pair<const Key,Value>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::DFAState"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(67,36): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(67,36): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(67,36): warning C4251:             Key=size_t,
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(67,36): warning C4251:             Value=antlr4::dfa::DFAState *
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(67,36): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\unordered_map(61,7):
+       см. объявление "std::unordered_map<size_t,antlr4::dfa::DFAState *,std::hash<size_t>,std::equal_to<size_t>,std::allocator<std::pair<const Key,Value>>>"
+          with
+          [
+              Key=size_t,
+              Value=antlr4::dfa::DFAState *
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(74,41): warning C4251: "antlr4::dfa::DFAState::lexerActionExecutor": "std::shared_ptr<const antlr4::atn::LexerActionExecutor>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::DFAState"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::LexerActionExecutor>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFAState.h(89,33): warning C4251: "antlr4::dfa::DFAState::predicates": "std::vector<antlr4::dfa::DFAState::PredPrediction,std::allocator<antlr4::dfa::DFAState::PredPrediction>>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::DFAState"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::dfa::DFAState::PredPrediction,std::allocator<antlr4::dfa::DFAState::PredPrediction>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(73,77): warning C4251: "antlr4::atn::PredictionContextMergeCache::Entry::key": "std::pair<std::shared_ptr<const antlr4::atn::PredictionContext>,std::shared_ptr<const antlr4::atn::PredictionContext>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredictionContextMergeCache::Entry"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\utility(247,8):
+       см. объявление "std::pair<std::shared_ptr<const antlr4::atn::PredictionContext>,std::shared_ptr<const antlr4::atn::PredictionContext>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(74,36): warning C4251: "antlr4::atn::PredictionContextMergeCache::Entry::value": "std::shared_ptr<const antlr4::atn::PredictionContext>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredictionContextMergeCache::Entry"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::PredictionContext>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(92,15): warning C4251: "antlr4::atn::PredictionContextMergeCache::_entries": "std::unordered_map<antlr4::atn::PredictionContextMergeCache::PredictionContextPair,std::unique_ptr<antlr4::atn::PredictionContextMergeCache::Entry,std::default_delete<antlr4::atn::PredictionContextMergeCache::Entry>>,antlr4::atn::PredictionContextMergeCache::PredictionContextHasher,antlr4::atn::PredictionContextMergeCache::PredictionContextComparer,std::allocator<std::pair<const Key,Value>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredictionContextMergeCache"
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(92,15): warning C4251:         with
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(92,15): warning C4251:         [
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(92,15): warning C4251:             Key=antlr4::atn::PredictionContextMergeCache::PredictionContextPair,
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(92,15): warning C4251:             Value=std::unique_ptr<antlr4::atn::PredictionContextMergeCache::Entry,std::default_delete<antlr4::atn::PredictionContextMergeCache::Entry>>
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredictionContextMergeCache.h(92,15): warning C4251:         ]
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\unordered_map(61,7):
+       см. объявление "std::unordered_map<antlr4::atn::PredictionContextMergeCache::PredictionContextPair,std::unique_ptr<antlr4::atn::PredictionContextMergeCache::Entry,std::default_delete<antlr4::atn::PredictionContextMergeCache::Entry>>,antlr4::atn::PredictionContextMergeCache::PredictionContextHasher,antlr4::atn::PredictionContextMergeCache::PredictionContextComparer,std::allocator<std::pair<const Key,Value>>>"
+          with
+          [
+              Key=antlr4::atn::PredictionContextMergeCache::PredictionContextPair,
+              Value=std::unique_ptr<antlr4::atn::PredictionContextMergeCache::Entry,std::default_delete<antlr4::atn::PredictionContextMergeCache::Entry>>
+          ]
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PrecedencePredicateTransition.h(31,71): warning C4251: "antlr4::atn::PrecedencePredicateTransition::_predicate": "std::shared_ptr<const antlr4::atn::SemanticContext::PrecedencePredicate>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PrecedencePredicateTransition"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::SemanticContext::PrecedencePredicate>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\PredicateTransition.h(46,61): warning C4251: "antlr4::atn::PredicateTransition::_predicate": "std::shared_ptr<const antlr4::atn::SemanticContext::Predicate>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::PredicateTransition"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::SemanticContext::Predicate>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\ProfilingATNSimulator.h(24,31): warning C4251: "antlr4::atn::ProfilingATNSimulator::_decisions": "std::vector<antlr4::atn::DecisionInfo,std::allocator<antlr4::atn::DecisionInfo>>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::ProfilingATNSimulator"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+       см. объявление "std::vector<antlr4::atn::DecisionInfo,std::allocator<antlr4::atn::DecisionInfo>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\atn\SingletonPredictionContext.h(26,40): warning C4251: "antlr4::atn::SingletonPredictionContext::parent": "std::shared_ptr<const antlr4::atn::PredictionContext>" должен иметь dll-интерфейс для использования клиентами "antlr4::atn::SingletonPredictionContext"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(1557,7):
+       см. объявление "std::shared_ptr<const antlr4::atn::PredictionContext>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\dfa\DFA.h(33,69): warning C4251: "antlr4::dfa::DFA::states": "std::unordered_set<antlr4::dfa::DFAState *,antlr4::dfa::DFA::DFAStateHasher,antlr4::dfa::DFA::DFAStateComparer,std::allocator<antlr4::dfa::DFAState *>>" должен иметь dll-интерфейс для использования клиентами "antlr4::dfa::DFA"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\unordered_set(59,7):
+       см. объявление "std::unordered_set<antlr4::dfa::DFAState *,antlr4::dfa::DFA::DFAStateHasher,antlr4::dfa::DFA::DFAStateComparer,std::allocator<antlr4::dfa::DFAState *>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\ParseTreeProperty.h(46,29): warning C4251: "antlr4::tree::ParseTreeProperty<V>::_annotations": "std::map<antlr4::tree::ParseTree*,V,std::less<antlr4::tree::ParseTree *>,std::allocator<std::pair<antlr4::tree::ParseTree*const ,V>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::ParseTreeProperty<V>"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\map(72,7):
+       см. объявление "std::map<antlr4::tree::ParseTree*,V,std::less<antlr4::tree::ParseTree *>,std::allocator<std::pair<antlr4::tree::ParseTree*const ,V>>>"
+      C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\ParseTreeProperty.h(46,29):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\ParseTreeProperty.h(30,26):
+          при компиляции шаблона класса "antlr4::tree::ParseTreeProperty"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\ParseTreeMatch.h(24,53): warning C4251: "antlr4::tree::pattern::ParseTreeMatch::_labels": "std::map<std::string,std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>>>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::ParseTreeMatch"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\map(72,7):
+       см. объявление "std::map<std::string,std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>,std::less<std::string>,std::allocator<std::pair<const std::string,std::vector<antlr4::tree::ParseTree *,std::allocator<antlr4::tree::ParseTree *>>>>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\ParseTreePattern.h(94,23): warning C4251: "antlr4::tree::pattern::ParseTreePattern::_pattern": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::ParseTreePattern"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\ParseTreePatternMatcher.h(160,17): warning C4251: "antlr4::tree::pattern::ParseTreePatternMatcher::_start": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::ParseTreePatternMatcher"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\ParseTreePatternMatcher.h(161,17): warning C4251: "antlr4::tree::pattern::ParseTreePatternMatcher::_stop": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::ParseTreePatternMatcher"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\ParseTreePatternMatcher.h(162,17): warning C4251: "antlr4::tree::pattern::ParseTreePatternMatcher::_escape": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::ParseTreePatternMatcher"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\RuleTagToken.h(24,23): warning C4251: "antlr4::tree::pattern::RuleTagToken::ruleName": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::RuleTagToken"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\RuleTagToken.h(31,23): warning C4251: "antlr4::tree::pattern::RuleTagToken::label": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::RuleTagToken"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\TagChunk.h(77,23): warning C4251: "antlr4::tree::pattern::TagChunk::_tag": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::TagChunk"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\TagChunk.h(81,23): warning C4251: "antlr4::tree::pattern::TagChunk::_label": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::TagChunk"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\TextChunk.h(23,23): warning C4251: "antlr4::tree::pattern::TextChunk::text": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::TextChunk"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\TokenTagToken.h(24,23): warning C4251: "antlr4::tree::pattern::TokenTagToken::tokenName": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::TokenTagToken"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\pattern\TokenTagToken.h(28,23): warning C4251: "antlr4::tree::pattern::TokenTagToken::label": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::pattern::TokenTagToken"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\xpath\XPath.h(58,30): warning C4251: "antlr4::tree::xpath::XPath::WILDCARD": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::xpath::XPath"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\xpath\XPath.h(59,30): warning C4251: "antlr4::tree::xpath::XPath::NOT": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::xpath::XPath"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\xpath\XPath.h(75,17): warning C4251: "antlr4::tree::xpath::XPath::_path": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::xpath::XPath"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+C:\Users\Артем\Desktop\mp2-lab6-Translator\core\antlr\include\antlr4-runtime\tree\xpath\XPathElement.h(34,17): warning C4251: "antlr4::tree::xpath::XPathElement::_nodeName": "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами "antlr4::tree::xpath::XPathElement"
+  (компиляция исходного файла "../interface/console_interface.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(522,7):
+       см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  
+  interface.vcxproj -> C:\Users\Артем\Desktop\mp2-lab6-Translator\build\Release\interface.exe

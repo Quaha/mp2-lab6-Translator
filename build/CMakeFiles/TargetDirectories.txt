@@ -1,0 +1,8 @@
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/CMakeFiles/core.dir
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/CMakeFiles/grammar.dir
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/CMakeFiles/tests.dir
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/CMakeFiles/interface.dir
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/external/googletest/CMakeFiles/gtest.dir
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/external/googletest/CMakeFiles/gtest_main.dir
+C:/Users/Артем/Desktop/mp2-lab6-Translator/build/external/googletest/CMakeFiles/ALL_BUILD.dir

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\4307068a4fa54ffe2fd97d7670093b4b\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\e78caba7cfdd7e085274e1102bd85e20\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\bf380bc5b06da0fc8f5c77341a642d3c\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Артем\Desktop\mp2-lab6-Translator\external\antlr4-runtime-cpp\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3A375E00-5EB1-3425-A8F7-842A34C869CB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
