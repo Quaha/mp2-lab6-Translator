@@ -2,6 +2,7 @@
 ## Как установить?
 1) Установить Java: https://www.java.com/ru/download/
 2) Установить Anaconda с добавлением в PATH: https://www.anaconda.com/download/
+3) Клонировать репозиторий
 
 ## Как запустить?
 1) Запустить BUILD_RELEASE.bat
