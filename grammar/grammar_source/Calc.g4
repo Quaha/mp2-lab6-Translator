@@ -15,9 +15,19 @@ expr
     ;
 
 term
-    : term MUL INT		#MulTerm
-    | term DIV INT		#DivTerm
-    | INT			#IntTerm
+    : term MUL factor           #MulTerm
+    | term DIV factor		#DivTerm
+    | factor			#FactorTerm
+    ;
+
+factor
+    : LBRACKET expr RBRACKET    #BracketFactor
+    | number			#NumberFactor
+    ;
+
+number
+    : INT			#IntNumber
+    | INT DOT INT		#RealNumber
     ;
 
 INT : [0-9]+ ;
@@ -26,6 +36,11 @@ PLUS  : '+' ;
 MINUS : '-' ;
 MUL   : '*' ;
 DIV   : '/' ;
+
+DOT   : '.' ;
+
+LBRACKET : '(' ;
+RBRACKET : ')' ;
 
 SEP : ';' ;
 

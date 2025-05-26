@@ -12,11 +12,13 @@
 class  CalcParser : public antlr4::Parser {
 public:
   enum {
-    INT = 1, PLUS = 2, MINUS = 3, MUL = 4, DIV = 5, SEP = 6, WS = 7
+    INT = 1, PLUS = 2, MINUS = 3, MUL = 4, DIV = 5, DOT = 6, LBRACKET = 7, 
+    RBRACKET = 8, SEP = 9, WS = 10
   };
 
   enum {
-    RuleProgram = 0, RuleLine = 1, RuleExpr = 2, RuleTerm = 3
+    RuleProgram = 0, RuleLine = 1, RuleExpr = 2, RuleTerm = 3, RuleFactor = 4, 
+    RuleNumber = 5
   };
 
   explicit CalcParser(antlr4::TokenStream *input);
@@ -39,7 +41,9 @@ public:
   class ProgramContext;
   class LineContext;
   class ExprContext;
-  class TermContext; 
+  class TermContext;
+  class FactorContext;
+  class NumberContext; 
 
   class  ProgramContext : public antlr4::ParserRuleContext {
   public:
@@ -168,7 +172,7 @@ public:
 
     TermContext *term();
     antlr4::tree::TerminalNode *MUL();
-    antlr4::tree::TerminalNode *INT();
+    FactorContext *factor();
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
 
@@ -181,18 +185,18 @@ public:
 
     TermContext *term();
     antlr4::tree::TerminalNode *DIV();
-    antlr4::tree::TerminalNode *INT();
+    FactorContext *factor();
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
 
     virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
   };
 
-  class  IntTermContext : public TermContext {
+  class  FactorTermContext : public TermContext {
   public:
-    IntTermContext(TermContext *ctx);
+    FactorTermContext(TermContext *ctx);
 
-    antlr4::tree::TerminalNode *INT();
+    FactorContext *factor();
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
 
@@ -201,6 +205,84 @@ public:
 
   TermContext* term();
   TermContext* term(int precedence);
+  class  FactorContext : public antlr4::ParserRuleContext {
+  public:
+    FactorContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    FactorContext() = default;
+    void copyFrom(FactorContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
+
+    virtual size_t getRuleIndex() const override;
+
+   
+  };
+
+  class  BracketFactorContext : public FactorContext {
+  public:
+    BracketFactorContext(FactorContext *ctx);
+
+    antlr4::tree::TerminalNode *LBRACKET();
+    ExprContext *expr();
+    antlr4::tree::TerminalNode *RBRACKET();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  class  NumberFactorContext : public FactorContext {
+  public:
+    NumberFactorContext(FactorContext *ctx);
+
+    NumberContext *number();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  FactorContext* factor();
+
+  class  NumberContext : public antlr4::ParserRuleContext {
+  public:
+    NumberContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    NumberContext() = default;
+    void copyFrom(NumberContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
+
+    virtual size_t getRuleIndex() const override;
+
+   
+  };
+
+  class  RealNumberContext : public NumberContext {
+  public:
+    RealNumberContext(NumberContext *ctx);
+
+    std::vector<antlr4::tree::TerminalNode *> INT();
+    antlr4::tree::TerminalNode* INT(size_t i);
+    antlr4::tree::TerminalNode *DOT();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  class  IntNumberContext : public NumberContext {
+  public:
+    IntNumberContext(NumberContext *ctx);
+
+    antlr4::tree::TerminalNode *INT();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  NumberContext* number();
+
 
   bool sempred(antlr4::RuleContext *_localctx, size_t ruleIndex, size_t predicateIndex) override;
 

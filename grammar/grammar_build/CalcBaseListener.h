@@ -37,8 +37,20 @@ public:
   virtual void enterDivTerm(CalcParser::DivTermContext * /*ctx*/) override { }
   virtual void exitDivTerm(CalcParser::DivTermContext * /*ctx*/) override { }
 
-  virtual void enterIntTerm(CalcParser::IntTermContext * /*ctx*/) override { }
-  virtual void exitIntTerm(CalcParser::IntTermContext * /*ctx*/) override { }
+  virtual void enterFactorTerm(CalcParser::FactorTermContext * /*ctx*/) override { }
+  virtual void exitFactorTerm(CalcParser::FactorTermContext * /*ctx*/) override { }
+
+  virtual void enterBracketFactor(CalcParser::BracketFactorContext * /*ctx*/) override { }
+  virtual void exitBracketFactor(CalcParser::BracketFactorContext * /*ctx*/) override { }
+
+  virtual void enterNumberFactor(CalcParser::NumberFactorContext * /*ctx*/) override { }
+  virtual void exitNumberFactor(CalcParser::NumberFactorContext * /*ctx*/) override { }
+
+  virtual void enterIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }
+  virtual void exitIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }
+
+  virtual void enterRealNumber(CalcParser::RealNumberContext * /*ctx*/) override { }
+  virtual void exitRealNumber(CalcParser::RealNumberContext * /*ctx*/) override { }
 
 
   virtual void enterEveryRule(antlr4::ParserRuleContext * /*ctx*/) override { }

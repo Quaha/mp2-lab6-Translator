@@ -33,7 +33,15 @@ public:
 
     virtual std::any visitDivTerm(CalcParser::DivTermContext *context) = 0;
 
-    virtual std::any visitIntTerm(CalcParser::IntTermContext *context) = 0;
+    virtual std::any visitFactorTerm(CalcParser::FactorTermContext *context) = 0;
+
+    virtual std::any visitBracketFactor(CalcParser::BracketFactorContext *context) = 0;
+
+    virtual std::any visitNumberFactor(CalcParser::NumberFactorContext *context) = 0;
+
+    virtual std::any visitIntNumber(CalcParser::IntNumberContext *context) = 0;
+
+    virtual std::any visitRealNumber(CalcParser::RealNumberContext *context) = 0;
 
 
 };

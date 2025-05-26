@@ -35,8 +35,20 @@ public:
   virtual void enterDivTerm(CalcParser::DivTermContext *ctx) = 0;
   virtual void exitDivTerm(CalcParser::DivTermContext *ctx) = 0;
 
-  virtual void enterIntTerm(CalcParser::IntTermContext *ctx) = 0;
-  virtual void exitIntTerm(CalcParser::IntTermContext *ctx) = 0;
+  virtual void enterFactorTerm(CalcParser::FactorTermContext *ctx) = 0;
+  virtual void exitFactorTerm(CalcParser::FactorTermContext *ctx) = 0;
+
+  virtual void enterBracketFactor(CalcParser::BracketFactorContext *ctx) = 0;
+  virtual void exitBracketFactor(CalcParser::BracketFactorContext *ctx) = 0;
+
+  virtual void enterNumberFactor(CalcParser::NumberFactorContext *ctx) = 0;
+  virtual void exitNumberFactor(CalcParser::NumberFactorContext *ctx) = 0;
+
+  virtual void enterIntNumber(CalcParser::IntNumberContext *ctx) = 0;
+  virtual void exitIntNumber(CalcParser::IntNumberContext *ctx) = 0;
+
+  virtual void enterRealNumber(CalcParser::RealNumberContext *ctx) = 0;
+  virtual void exitRealNumber(CalcParser::RealNumberContext *ctx) = 0;
 
 
 };
