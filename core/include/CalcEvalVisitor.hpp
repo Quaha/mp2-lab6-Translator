@@ -13,7 +13,11 @@ public:
 
     antlrcpp::Any visitMulTerm(CalcParser::MulTermContext* ctx) override;
     antlrcpp::Any visitDivTerm(CalcParser::DivTermContext* ctx) override;
-    antlrcpp::Any visitFactorTerm(CalcParser::FactorTermContext* ctx) override;
+    antlrcpp::Any visitPrimaryTerm(CalcParser::PrimaryTermContext* ctx) override;
+
+    antlrcpp::Any visitPlusPrimary(CalcParser::PlusPrimaryContext* ctx) override;
+    antlrcpp::Any visitMinusPrimary(CalcParser::MinusPrimaryContext* ctx) override;
+    antlrcpp::Any visitFactPrimary(CalcParser::FactPrimaryContext* ctx) override;
 
     antlrcpp::Any visitBracketFactor(CalcParser::BracketFactorContext* ctx) override;
     antlrcpp::Any visitNumberFactor(CalcParser::NumberFactorContext* ctx) override;

@@ -16,11 +16,11 @@ int main() {
                 std::cout << ">> " << value << std::endl;
             }
         }
-        catch (const std::string& error_message) {
-            std::cout << error_message << std::endl;
+        catch (const std::exception& ex) {
+            std::cout << "Error: " << ex.what() << std::endl;
         }
         catch (...) {
-            std::cout << "Something went wrong!" << std::endl;
+            std::cout << "Error: Something went wrong!" << std::endl;
         }
     }
 }

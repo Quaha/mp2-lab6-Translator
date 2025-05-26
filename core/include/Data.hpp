@@ -50,11 +50,3 @@ public:
 
 Data stringToIntegerData(const std::string& S);
 Data stringToRealData(const std::string& S);
-
-namespace DataMath {
-
-	Data add(Data lhs, Data rhs);
-	Data sub(Data lhs, Data rhs);
-	Data mul(Data lhs, Data rhs);
-	Data div(Data lhs, Data rhs);
-}

@@ -37,8 +37,17 @@ public:
   virtual void enterDivTerm(CalcParser::DivTermContext * /*ctx*/) override { }
   virtual void exitDivTerm(CalcParser::DivTermContext * /*ctx*/) override { }
 
-  virtual void enterFactorTerm(CalcParser::FactorTermContext * /*ctx*/) override { }
-  virtual void exitFactorTerm(CalcParser::FactorTermContext * /*ctx*/) override { }
+  virtual void enterPrimaryTerm(CalcParser::PrimaryTermContext * /*ctx*/) override { }
+  virtual void exitPrimaryTerm(CalcParser::PrimaryTermContext * /*ctx*/) override { }
+
+  virtual void enterPlusPrimary(CalcParser::PlusPrimaryContext * /*ctx*/) override { }
+  virtual void exitPlusPrimary(CalcParser::PlusPrimaryContext * /*ctx*/) override { }
+
+  virtual void enterMinusPrimary(CalcParser::MinusPrimaryContext * /*ctx*/) override { }
+  virtual void exitMinusPrimary(CalcParser::MinusPrimaryContext * /*ctx*/) override { }
+
+  virtual void enterFactPrimary(CalcParser::FactPrimaryContext * /*ctx*/) override { }
+  virtual void exitFactPrimary(CalcParser::FactPrimaryContext * /*ctx*/) override { }
 
   virtual void enterBracketFactor(CalcParser::BracketFactorContext * /*ctx*/) override { }
   virtual void exitBracketFactor(CalcParser::BracketFactorContext * /*ctx*/) override { }

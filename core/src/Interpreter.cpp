@@ -1,9 +1,12 @@
 #include "Interpreter.hpp"
 
 #include "antlr4-runtime.h"
+
 #include "CalcLexer.h"
 #include "CalcParser.h"
 #include "CalcEvalVisitor.hpp"
+
+#include "ThrowingErrorListener.hpp"
 
 std::vector<Data> processProgram(const std::string& input) {
 
@@ -12,6 +15,13 @@ std::vector<Data> processProgram(const std::string& input) {
     CalcLexer lexer(&stream);
     antlr4::CommonTokenStream tokens(&lexer);
     CalcParser parser(&tokens);
+
+    lexer.removeErrorListeners();
+    parser.removeErrorListeners();
+
+    auto errorListener = std::make_shared<ThrowingErrorListener>();
+    lexer.addErrorListener(errorListener.get());
+    parser.addErrorListener(errorListener.get());
 
     auto tree = parser.program();
 

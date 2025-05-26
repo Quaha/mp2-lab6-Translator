@@ -43,7 +43,19 @@ public:
     return visitChildren(ctx);
   }
 
-  virtual std::any visitFactorTerm(CalcParser::FactorTermContext *ctx) override {
+  virtual std::any visitPrimaryTerm(CalcParser::PrimaryTermContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitPlusPrimary(CalcParser::PlusPrimaryContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitMinusPrimary(CalcParser::MinusPrimaryContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitFactPrimary(CalcParser::FactPrimaryContext *ctx) override {
     return visitChildren(ctx);
   }
 

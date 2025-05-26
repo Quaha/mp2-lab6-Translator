@@ -35,8 +35,17 @@ public:
   virtual void enterDivTerm(CalcParser::DivTermContext *ctx) = 0;
   virtual void exitDivTerm(CalcParser::DivTermContext *ctx) = 0;
 
-  virtual void enterFactorTerm(CalcParser::FactorTermContext *ctx) = 0;
-  virtual void exitFactorTerm(CalcParser::FactorTermContext *ctx) = 0;
+  virtual void enterPrimaryTerm(CalcParser::PrimaryTermContext *ctx) = 0;
+  virtual void exitPrimaryTerm(CalcParser::PrimaryTermContext *ctx) = 0;
+
+  virtual void enterPlusPrimary(CalcParser::PlusPrimaryContext *ctx) = 0;
+  virtual void exitPlusPrimary(CalcParser::PlusPrimaryContext *ctx) = 0;
+
+  virtual void enterMinusPrimary(CalcParser::MinusPrimaryContext *ctx) = 0;
+  virtual void exitMinusPrimary(CalcParser::MinusPrimaryContext *ctx) = 0;
+
+  virtual void enterFactPrimary(CalcParser::FactPrimaryContext *ctx) = 0;
+  virtual void exitFactPrimary(CalcParser::FactPrimaryContext *ctx) = 0;
 
   virtual void enterBracketFactor(CalcParser::BracketFactorContext *ctx) = 0;
   virtual void exitBracketFactor(CalcParser::BracketFactorContext *ctx) = 0;

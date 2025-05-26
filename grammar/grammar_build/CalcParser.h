@@ -17,8 +17,8 @@ public:
   };
 
   enum {
-    RuleProgram = 0, RuleLine = 1, RuleExpr = 2, RuleTerm = 3, RuleFactor = 4, 
-    RuleNumber = 5
+    RuleProgram = 0, RuleLine = 1, RuleExpr = 2, RuleTerm = 3, RulePrimary = 4, 
+    RuleFactor = 5, RuleNumber = 6
   };
 
   explicit CalcParser(antlr4::TokenStream *input);
@@ -42,6 +42,7 @@ public:
   class LineContext;
   class ExprContext;
   class TermContext;
+  class PrimaryContext;
   class FactorContext;
   class NumberContext; 
 
@@ -192,11 +193,11 @@ public:
     virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
   };
 
-  class  FactorTermContext : public TermContext {
+  class  PrimaryTermContext : public TermContext {
   public:
-    FactorTermContext(TermContext *ctx);
+    PrimaryTermContext(TermContext *ctx);
 
-    FactorContext *factor();
+    PrimaryContext *primary();
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
 
@@ -205,6 +206,56 @@ public:
 
   TermContext* term();
   TermContext* term(int precedence);
+  class  PrimaryContext : public antlr4::ParserRuleContext {
+  public:
+    PrimaryContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    PrimaryContext() = default;
+    void copyFrom(PrimaryContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
+
+    virtual size_t getRuleIndex() const override;
+
+   
+  };
+
+  class  FactPrimaryContext : public PrimaryContext {
+  public:
+    FactPrimaryContext(PrimaryContext *ctx);
+
+    FactorContext *factor();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  class  MinusPrimaryContext : public PrimaryContext {
+  public:
+    MinusPrimaryContext(PrimaryContext *ctx);
+
+    antlr4::tree::TerminalNode *MINUS();
+    FactorContext *factor();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  class  PlusPrimaryContext : public PrimaryContext {
+  public:
+    PlusPrimaryContext(PrimaryContext *ctx);
+
+    antlr4::tree::TerminalNode *PLUS();
+    FactorContext *factor();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  PrimaryContext* primary();
+
   class  FactorContext : public antlr4::ParserRuleContext {
   public:
     FactorContext(antlr4::ParserRuleContext *parent, size_t invokingState);

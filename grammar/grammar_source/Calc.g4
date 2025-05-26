@@ -17,7 +17,13 @@ expr
 term
     : term MUL factor           #MulTerm
     | term DIV factor		#DivTerm
-    | factor			#FactorTerm
+    | primary			#PrimaryTerm
+    ;
+
+primary
+    : PLUS factor		#PlusPrimary
+    | MINUS factor		#MinusPrimary
+    | factor			#FactPrimary
     ;
 
 factor

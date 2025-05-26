@@ -3,6 +3,7 @@
 #include "CalcEvalVisitor.hpp"
 
 #include "Data.hpp"
+#include "DataMath.hpp"
 
 antlrcpp::Any CalcEvalVisitor::visitExProgram(CalcParser::ExProgramContext* ctx) {
     std::vector<Data> data;
@@ -48,7 +49,19 @@ antlrcpp::Any CalcEvalVisitor::visitDivTerm(CalcParser::DivTermContext* ctx) {
     return DataMath::div(lhs, rhs);
 }
 
-antlrcpp::Any CalcEvalVisitor::visitFactorTerm(CalcParser::FactorTermContext* ctx) {
+antlrcpp::Any CalcEvalVisitor::visitPrimaryTerm(CalcParser::PrimaryTermContext* ctx) {
+    return std::any_cast<Data>(visit(ctx->primary()));
+}
+
+antlrcpp::Any CalcEvalVisitor::visitPlusPrimary(CalcParser::PlusPrimaryContext* ctx) {
+    return std::any_cast<Data>(visit(ctx->factor()));
+}
+
+antlrcpp::Any CalcEvalVisitor::visitMinusPrimary(CalcParser::MinusPrimaryContext* ctx) {
+    return DataMath::uminus(std::any_cast<Data>(visit(ctx->factor())));
+}
+
+antlrcpp::Any CalcEvalVisitor::visitFactPrimary(CalcParser::FactPrimaryContext* ctx) {
     return std::any_cast<Data>(visit(ctx->factor()));
 }
 
