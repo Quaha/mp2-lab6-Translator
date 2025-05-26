@@ -20,7 +20,10 @@ public:
     antlrcpp::Any visitFactPrimary(CalcParser::FactPrimaryContext* ctx) override;
 
     antlrcpp::Any visitBracketFactor(CalcParser::BracketFactorContext* ctx) override;
+    antlrcpp::Any visitFunctionFactor(CalcParser::FunctionFactorContext* ctx) override;
     antlrcpp::Any visitNumberFactor(CalcParser::NumberFactorContext* ctx) override;
+
+    antlrcpp::Any visitFunctionCall(CalcParser::FunctionCallContext* ctx) override;
 
     antlrcpp::Any visitIntNumber(CalcParser::IntNumberContext* ctx) override;
     antlrcpp::Any visitRealNumber(CalcParser::RealNumberContext* ctx) override;

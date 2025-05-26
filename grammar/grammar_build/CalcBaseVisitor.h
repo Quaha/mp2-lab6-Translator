@@ -63,7 +63,15 @@ public:
     return visitChildren(ctx);
   }
 
+  virtual std::any visitFunctionFactor(CalcParser::FunctionFactorContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitNumberFactor(CalcParser::NumberFactorContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitFunctionCall(CalcParser::FunctionCallContext *ctx) override {
     return visitChildren(ctx);
   }
 

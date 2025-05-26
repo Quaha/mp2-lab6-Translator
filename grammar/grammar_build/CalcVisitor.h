@@ -43,7 +43,11 @@ public:
 
     virtual std::any visitBracketFactor(CalcParser::BracketFactorContext *context) = 0;
 
+    virtual std::any visitFunctionFactor(CalcParser::FunctionFactorContext *context) = 0;
+
     virtual std::any visitNumberFactor(CalcParser::NumberFactorContext *context) = 0;
+
+    virtual std::any visitFunctionCall(CalcParser::FunctionCallContext *context) = 0;
 
     virtual std::any visitIntNumber(CalcParser::IntNumberContext *context) = 0;
 

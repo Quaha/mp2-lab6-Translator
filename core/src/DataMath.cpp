@@ -1,3 +1,6 @@
+#include <vector>
+#include <cmath>
+
 #include "DataMath.hpp"
 
 namespace DataMath {
@@ -27,7 +30,7 @@ namespace DataMath {
 			throw std::runtime_error("Invalid type of lhs in DataMath::add() function!");
 		}
 		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::add() function!");
+			throw std::runtime_error("Invalid type of rhs in DataMath::add() function!");
 		}
 
 		Data result;
@@ -56,7 +59,7 @@ namespace DataMath {
 			throw std::runtime_error("Invalid type of lhs in DataMath::sub() function!");
 		}
 		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::sub() function!");
+			throw std::runtime_error("Invalid type of rhs in DataMath::sub() function!");
 		}
 
 		Data result;
@@ -84,7 +87,7 @@ namespace DataMath {
 			throw std::runtime_error("Invalid type of lhs in DataMath::mul() function!");
 		}
 		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::mul() function!");
+			throw std::runtime_error("Invalid type of rhs in DataMath::mul() function!");
 		}
 
 		Data result;
@@ -112,7 +115,7 @@ namespace DataMath {
 			throw std::runtime_error("Invalid type of lhs in DataMath::div() function!");
 		}
 		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::div() function!");
+			throw std::runtime_error("Invalid type of rhs in DataMath::div() function!");
 		}
 
 		Data result;
@@ -133,5 +136,86 @@ namespace DataMath {
 		}
 
 		return result;
+	}
+
+	Data SUM(std::vector<Data> args) {
+		int N = args.size();
+
+		if (N == 0) {
+			throw std::runtime_error("Invalid count of args in DataMath::SUM() function!");
+		}
+
+		for (int i = 0; i < N; i++) {
+			args[i].makeNumber();
+		}
+
+		for (int i = 0; i < N; i++) {
+			if (!args[i].isCorrect()) {
+				throw std::runtime_error("Invalid type of arg in DataMath::SUM() function!");
+			}
+		}
+
+		bool any_real = false;
+		for (int i = 0; i < N; i++) {
+			if (args[i].getDataType() == DataType::REAL) {
+				any_real = true;
+			}
+		}
+
+		Data result;
+
+		if (any_real) {
+			for (int i = 0; i < N; i++) {
+				args[i].makeReal();
+			}
+
+			result.setDataType(DataType::REAL);
+
+			real_t sum = 0;
+			for (int i = 0; i < N; i++) {
+				sum += args[i].as<real_t>();
+			}
+
+			result.setData(sum);
+		}
+		else {
+			result.setDataType(DataType::INTEGER);
+
+			integer_t sum = 0;
+			for (int i = 0; i < N; i++) {
+				sum += args[i].as<integer_t>();
+			}
+
+			result.setData(sum);
+		}
+
+		return result;
+	}
+
+	Data ABS(std::vector<Data> args) {
+		int N = args.size();
+
+		if (N != 1) {
+			throw std::runtime_error("Invalid count of args in DataMath::SUM() function!");
+		}
+		
+		Data arg = args[0];
+		arg.makeNumber();
+
+		if (arg.getDataType() == DataType::INTEGER) {
+			integer_t value = arg.as<integer_t>();
+			if (value < 0) {
+				value = -value;
+			}
+			arg.setData(value);
+		}
+		if (arg.getDataType() == DataType::REAL) {
+			real_t value = arg.as<real_t>();
+			if (value < 0) {
+				value = -value;
+			}
+			arg.setData(value);
+		}
+		return arg;
 	}
 }
