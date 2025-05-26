@@ -15,5 +15,3 @@ build/
 core/antlr/
 
 external/antlr4-runtime-cpp/build/
-
-grammar/grammar_build/

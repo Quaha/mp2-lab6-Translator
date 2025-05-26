@@ -1,6 +1,6 @@
 @echo off
 
-set JAR=grammar_source\antlr4-4.13.1-complete.jar
+set JAR=grammar_source/antlr4-4.13.1-complete.jar
 set INPUT_DIR=grammar_source
 set OUTPUT_DIR=grammar_build
 
