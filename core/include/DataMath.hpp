@@ -12,4 +12,5 @@ namespace DataMath {
 	Data div(Data lhs, Data rhs); // operator b/
 
 	Data SUM(std::vector<Data> args); // function sum() inf
+	Data ABS(std::vector<Data> args); // function abs() 1
 }

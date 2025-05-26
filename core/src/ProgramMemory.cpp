@@ -24,9 +24,8 @@ void initMemory() {
     if (ProgramMemory.isInited()) return;
     ProgramMemory.is_init = true;
 
-    // Functions
-
+    // Functions init
     ProgramMemory.functions["sum"] = &DataMath::SUM;
-
+    ProgramMemory.functions["abs"] = &DataMath::ABS;
 
 }

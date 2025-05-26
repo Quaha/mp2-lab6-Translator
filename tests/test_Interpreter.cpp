@@ -319,3 +319,53 @@ TEST(Interpreter, SumFunction4) {
 
     EXPECT_TRUE((3.0 + 30.3 + 33.0 - result) < EPS);
 }
+
+TEST(Interpreter, AbsFunction1) {
+
+    std::string input = "abs(1);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, AbsFunction2) {
+
+    std::string input = "abs(-1);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, AbsFunction3) {
+
+    std::string input = "abs();";
+
+    EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
+}
+
+TEST(Interpreter, AbsFunction4) {
+
+    std::string input = "abs(1,2);";
+
+    EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
+}
+
+TEST(Interpreter, AbsFunction5) {
+
+    std::string input = "abs(-5.5);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    real_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<real_t>());
+
+    EXPECT_TRUE((-5.5 - result) < EPS);
+}

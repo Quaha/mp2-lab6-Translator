@@ -191,4 +191,31 @@ namespace DataMath {
 
 		return result;
 	}
+
+	Data ABS(std::vector<Data> args) {
+		int N = args.size();
+
+		if (N != 1) {
+			throw std::runtime_error("Invalid count of args in DataMath::SUM() function!");
+		}
+		
+		Data arg = args[0];
+		arg.makeNumber();
+
+		if (arg.getDataType() == DataType::INTEGER) {
+			integer_t value = arg.as<integer_t>();
+			if (value < 0) {
+				value = -value;
+			}
+			arg.setData(value);
+		}
+		if (arg.getDataType() == DataType::REAL) {
+			real_t value = arg.as<real_t>();
+			if (value < 0) {
+				value = -value;
+			}
+			arg.setData(value);
+		}
+		return arg;
+	}
 }
