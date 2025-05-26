@@ -50,8 +50,14 @@ public:
   virtual void enterBracketFactor(CalcParser::BracketFactorContext *ctx) = 0;
   virtual void exitBracketFactor(CalcParser::BracketFactorContext *ctx) = 0;
 
+  virtual void enterFunctionFactor(CalcParser::FunctionFactorContext *ctx) = 0;
+  virtual void exitFunctionFactor(CalcParser::FunctionFactorContext *ctx) = 0;
+
   virtual void enterNumberFactor(CalcParser::NumberFactorContext *ctx) = 0;
   virtual void exitNumberFactor(CalcParser::NumberFactorContext *ctx) = 0;
+
+  virtual void enterFunctionCall(CalcParser::FunctionCallContext *ctx) = 0;
+  virtual void exitFunctionCall(CalcParser::FunctionCallContext *ctx) = 0;
 
   virtual void enterIntNumber(CalcParser::IntNumberContext *ctx) = 0;
   virtual void exitIntNumber(CalcParser::IntNumberContext *ctx) = 0;

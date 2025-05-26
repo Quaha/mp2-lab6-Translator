@@ -4,6 +4,7 @@
 
 #include "Data.hpp"
 #include "DataMath.hpp"
+#include "ProgramMemory.hpp"
 
 antlrcpp::Any CalcEvalVisitor::visitExProgram(CalcParser::ExProgramContext* ctx) {
     std::vector<Data> data;
@@ -65,12 +66,27 @@ antlrcpp::Any CalcEvalVisitor::visitFactPrimary(CalcParser::FactPrimaryContext* 
     return std::any_cast<Data>(visit(ctx->factor()));
 }
 
+antlrcpp::Any CalcEvalVisitor::visitFunctionFactor(CalcParser::FunctionFactorContext* ctx) {
+    return std::any_cast<Data>(visit(ctx->function()));
+}
+
 antlrcpp::Any CalcEvalVisitor::visitBracketFactor(CalcParser::BracketFactorContext* ctx) {
     return std::any_cast<Data>(visit(ctx->expr()));
 }
 
 antlrcpp::Any CalcEvalVisitor::visitNumberFactor(CalcParser::NumberFactorContext* ctx) {
     return std::any_cast<Data>(visit(ctx->number()));
+}
+
+antlrcpp::Any CalcEvalVisitor::visitFunctionCall(CalcParser::FunctionCallContext* ctx) {
+    std::string fname = ctx->NAME()->getText();
+
+    std::vector<Data> args;
+    for (auto expr : ctx->expr()) {
+        Data arg = std::any_cast<Data>(visit(expr));
+        args.push_back(arg);
+    }
+    return ProgramMemory.callFunction(fname, args);
 }
 
 antlrcpp::Any CalcEvalVisitor::visitIntNumber(CalcParser::IntNumberContext* ctx) {

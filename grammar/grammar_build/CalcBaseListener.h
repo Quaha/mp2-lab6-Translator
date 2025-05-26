@@ -52,8 +52,14 @@ public:
   virtual void enterBracketFactor(CalcParser::BracketFactorContext * /*ctx*/) override { }
   virtual void exitBracketFactor(CalcParser::BracketFactorContext * /*ctx*/) override { }
 
+  virtual void enterFunctionFactor(CalcParser::FunctionFactorContext * /*ctx*/) override { }
+  virtual void exitFunctionFactor(CalcParser::FunctionFactorContext * /*ctx*/) override { }
+
   virtual void enterNumberFactor(CalcParser::NumberFactorContext * /*ctx*/) override { }
   virtual void exitNumberFactor(CalcParser::NumberFactorContext * /*ctx*/) override { }
+
+  virtual void enterFunctionCall(CalcParser::FunctionCallContext * /*ctx*/) override { }
+  virtual void exitFunctionCall(CalcParser::FunctionCallContext * /*ctx*/) override { }
 
   virtual void enterIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }
   virtual void exitIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }

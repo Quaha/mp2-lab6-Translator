@@ -12,8 +12,8 @@
 class  CalcLexer : public antlr4::Lexer {
 public:
   enum {
-    INT = 1, PLUS = 2, MINUS = 3, MUL = 4, DIV = 5, DOT = 6, LBRACKET = 7, 
-    RBRACKET = 8, SEP = 9, WS = 10
+    WS = 1, INT = 2, NAME = 3, PLUS = 4, MINUS = 5, MUL = 6, DIV = 7, DOT = 8, 
+    COMMA = 9, LBRACKET = 10, RBRACKET = 11, SEP = 12
   };
 
   explicit CalcLexer(antlr4::CharStream *input);

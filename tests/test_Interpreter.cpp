@@ -276,3 +276,46 @@ TEST(Interpreter, WrongInput3) {
 
     EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
 }
+
+TEST(Interpreter, SumFunction1) {
+
+    std::string input = "sum(1);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, SumFunction2) {
+
+    std::string input = "sum();";
+
+    EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
+}
+
+TEST(Interpreter, SumFunction3) {
+
+    std::string input = "sum(3,30,33);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 3+30+33);
+}
+
+TEST(Interpreter, SumFunction4) {
+
+    std::string input = "sum(3,30.3,33);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    real_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<real_t>());
+
+    EXPECT_TRUE((3.0 + 30.3 + 33.0 - result) < EPS);
+}

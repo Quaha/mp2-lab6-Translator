@@ -12,13 +12,13 @@
 class  CalcParser : public antlr4::Parser {
 public:
   enum {
-    INT = 1, PLUS = 2, MINUS = 3, MUL = 4, DIV = 5, DOT = 6, LBRACKET = 7, 
-    RBRACKET = 8, SEP = 9, WS = 10
+    WS = 1, INT = 2, NAME = 3, PLUS = 4, MINUS = 5, MUL = 6, DIV = 7, DOT = 8, 
+    COMMA = 9, LBRACKET = 10, RBRACKET = 11, SEP = 12
   };
 
   enum {
     RuleProgram = 0, RuleLine = 1, RuleExpr = 2, RuleTerm = 3, RulePrimary = 4, 
-    RuleFactor = 5, RuleNumber = 6
+    RuleFactor = 5, RuleFunction = 6, RuleNumber = 7
   };
 
   explicit CalcParser(antlr4::TokenStream *input);
@@ -44,6 +44,7 @@ public:
   class TermContext;
   class PrimaryContext;
   class FactorContext;
+  class FunctionContext;
   class NumberContext; 
 
   class  ProgramContext : public antlr4::ParserRuleContext {
@@ -282,6 +283,17 @@ public:
     virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
   };
 
+  class  FunctionFactorContext : public FactorContext {
+  public:
+    FunctionFactorContext(FactorContext *ctx);
+
+    FunctionContext *function();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
   class  NumberFactorContext : public FactorContext {
   public:
     NumberFactorContext(FactorContext *ctx);
@@ -294,6 +306,38 @@ public:
   };
 
   FactorContext* factor();
+
+  class  FunctionContext : public antlr4::ParserRuleContext {
+  public:
+    FunctionContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    FunctionContext() = default;
+    void copyFrom(FunctionContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
+
+    virtual size_t getRuleIndex() const override;
+
+   
+  };
+
+  class  FunctionCallContext : public FunctionContext {
+  public:
+    FunctionCallContext(FunctionContext *ctx);
+
+    antlr4::tree::TerminalNode *NAME();
+    antlr4::tree::TerminalNode *LBRACKET();
+    antlr4::tree::TerminalNode *RBRACKET();
+    std::vector<ExprContext *> expr();
+    ExprContext* expr(size_t i);
+    std::vector<antlr4::tree::TerminalNode *> COMMA();
+    antlr4::tree::TerminalNode* COMMA(size_t i);
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  FunctionContext* function();
 
   class  NumberContext : public antlr4::ParserRuleContext {
   public:

@@ -7,8 +7,11 @@
 #include "CalcEvalVisitor.hpp"
 
 #include "ThrowingErrorListener.hpp"
+#include "ProgramMemory.hpp"
 
 std::vector<Data> processProgram(const std::string& input) {
+
+    initMemory();
 
     antlr4::ANTLRInputStream stream(input);
 
