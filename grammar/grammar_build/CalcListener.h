@@ -23,14 +23,41 @@ public:
   virtual void enterTermExpr(CalcParser::TermExprContext *ctx) = 0;
   virtual void exitTermExpr(CalcParser::TermExprContext *ctx) = 0;
 
-  virtual void enterEqExpr(CalcParser::EqExprContext *ctx) = 0;
-  virtual void exitEqExpr(CalcParser::EqExprContext *ctx) = 0;
+  virtual void enterBrteExpr(CalcParser::BrteExprContext *ctx) = 0;
+  virtual void exitBrteExpr(CalcParser::BrteExprContext *ctx) = 0;
+
+  virtual void enterBlteExpr(CalcParser::BlteExprContext *ctx) = 0;
+  virtual void exitBlteExpr(CalcParser::BlteExprContext *ctx) = 0;
+
+  virtual void enterBneqExpr(CalcParser::BneqExprContext *ctx) = 0;
+  virtual void exitBneqExpr(CalcParser::BneqExprContext *ctx) = 0;
 
   virtual void enterSubExpr(CalcParser::SubExprContext *ctx) = 0;
   virtual void exitSubExpr(CalcParser::SubExprContext *ctx) = 0;
 
   virtual void enterAddExpr(CalcParser::AddExprContext *ctx) = 0;
   virtual void exitAddExpr(CalcParser::AddExprContext *ctx) = 0;
+
+  virtual void enterBandExpr(CalcParser::BandExprContext *ctx) = 0;
+  virtual void exitBandExpr(CalcParser::BandExprContext *ctx) = 0;
+
+  virtual void enterBeqExpr(CalcParser::BeqExprContext *ctx) = 0;
+  virtual void exitBeqExpr(CalcParser::BeqExprContext *ctx) = 0;
+
+  virtual void enterBnotExpr(CalcParser::BnotExprContext *ctx) = 0;
+  virtual void exitBnotExpr(CalcParser::BnotExprContext *ctx) = 0;
+
+  virtual void enterBltExpr(CalcParser::BltExprContext *ctx) = 0;
+  virtual void exitBltExpr(CalcParser::BltExprContext *ctx) = 0;
+
+  virtual void enterEqExpr(CalcParser::EqExprContext *ctx) = 0;
+  virtual void exitEqExpr(CalcParser::EqExprContext *ctx) = 0;
+
+  virtual void enterBorExpr(CalcParser::BorExprContext *ctx) = 0;
+  virtual void exitBorExpr(CalcParser::BorExprContext *ctx) = 0;
+
+  virtual void enterBrtExpr(CalcParser::BrtExprContext *ctx) = 0;
+  virtual void exitBrtExpr(CalcParser::BrtExprContext *ctx) = 0;
 
   virtual void enterMulTerm(CalcParser::MulTermContext *ctx) = 0;
   virtual void exitMulTerm(CalcParser::MulTermContext *ctx) = 0;

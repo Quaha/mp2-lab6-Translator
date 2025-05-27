@@ -3,14 +3,12 @@
 
 Data::Data() {
 	this->type = DataType::NONE;
-	this->data = 0;
-	this->flags = DataFlags::None;
+	this->data = static_cast<integer_t>(0);
 }
 
-Data::Data(DataType type, std::any data, flag_t flags) {
+Data::Data(DataType type, std::any data) {
 	this->type = type;
 	this->data = data;
-	this->flags = flags;
 }
 
 DataType Data::getDataType() const {
@@ -21,28 +19,12 @@ std::any Data::getData() const {
 	return data;
 }
 
-flag_t Data::getFlags() const {
-	return flags;
-}
-
 void Data::setDataType(DataType type) {
 	this->type = type;
 }
 
 void Data::setData(std::any data) {
 	this->data = data;
-}
-
-void Data::setFlags(flag_t flags) {
-	this->flags = flags;
-}
-
-bool Data::checkFlags(flag_t flags) const {
-	return (this->flags & flags);
-}
-
-bool Data::isCorrect() const {
-	return !checkFlags(DataFlags::IncorrectData);
 }
 
 void Data::makeNumber() {
@@ -61,8 +43,6 @@ void Data::makeNumber() {
 		type = result.getDataType();
 		data = result.getData();
 	}
-
-	flags = DataFlags::None;
 }
 
 bool Data::isNumber() const {
@@ -89,6 +69,28 @@ void Data::makeReal() {
 		this->data = static_cast<real_t>(as<integer_t>());
 	}
 	this->type = DataType::REAL;
+}
+
+void Data::makeBool() {
+	makeNumber();
+
+	if (type == DataType::INTEGER) {
+		integer_t value = as<integer_t>();
+		if (value != static_cast<integer_t>(0)) {
+			this->data = static_cast<integer_t>(1);
+		}
+	}
+	if (type == DataType::REAL) {
+		real_t value = as<real_t>();
+		if (std::abs(value - static_cast<real_t>(0)) < EPS) {
+			this->data = static_cast<integer_t>(0);
+		}
+		else {
+			this->data = static_cast<integer_t>(1);
+		}
+
+		type = INTEGER;
+	}
 }
 
 std::ostream& operator<<(std::ostream& os, Data data) {

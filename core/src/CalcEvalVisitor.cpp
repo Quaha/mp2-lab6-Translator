@@ -20,7 +20,7 @@ antlrcpp::Any CalcEvalVisitor::visitExProgram(CalcParser::ExProgramContext* ctx)
 }
 
 antlrcpp::Any CalcEvalVisitor::visitExpressionLine(CalcParser::ExpressionLineContext* ctx) {
-    return visit(ctx->expr());
+    return std::any_cast<Data>(visit(ctx->expr()));
 }
 
 antlrcpp::Any CalcEvalVisitor::visitEqExpr(CalcParser::EqExprContext* ctx) {
@@ -30,6 +30,59 @@ antlrcpp::Any CalcEvalVisitor::visitEqExpr(CalcParser::EqExprContext* ctx) {
     ProgramMemory.setVariableValue(var.as<std::string>(), data);
 
     return data;
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBnotExpr(CalcParser::BnotExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr()));
+    return DataFunctions::bnot(lhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBeqExpr(CalcParser::BeqExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::beq(lhs, rhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBneqExpr(CalcParser::BneqExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::bneq(lhs, rhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBltExpr(CalcParser::BltExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::blt(lhs, rhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBrtExpr(CalcParser::BrtExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::brt(lhs, rhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBlteExpr(CalcParser::BlteExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::blte(lhs, rhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBrteExpr(CalcParser::BrteExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::brte(lhs, rhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBorExpr(CalcParser::BorExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::bor(lhs, rhs);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitBandExpr(CalcParser::BandExprContext* ctx) {
+    Data lhs = std::any_cast<Data>(visit(ctx->expr(0)));
+    Data rhs = std::any_cast<Data>(visit(ctx->expr(1)));
+    return DataFunctions::band(lhs, rhs);
 }
 
 antlrcpp::Any CalcEvalVisitor::visitAddExpr(CalcParser::AddExprContext* ctx) {

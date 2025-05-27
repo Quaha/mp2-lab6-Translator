@@ -446,3 +446,99 @@ TEST(Interpreter, Variable6) {
 
     clearMemory();
 }
+
+TEST(Interpreter, Bool1) {
+
+    std::string input = "1<2;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool2) {
+
+    std::string input = "2<1;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0ll);
+}
+
+TEST(Interpreter, Bool3) {
+
+    std::string input = "1==2;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0);
+}
+
+TEST(Interpreter, Bool4) {
+
+    std::string input = "1==1;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool5) {
+
+    std::string input = "1!=2;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool6) {
+
+    std::string input = "1!=1;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0);
+}
+
+TEST(Interpreter, Bool7) {
+
+    std::string input = "(1&&3)<=(1+4);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool8) {
+
+    std::string input = "(0||1)<=(0&&1);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0);
+}

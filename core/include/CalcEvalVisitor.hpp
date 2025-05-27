@@ -7,6 +7,16 @@ public:
     antlrcpp::Any visitExProgram(CalcParser::ExProgramContext* ctx) override;
     antlrcpp::Any visitExpressionLine(CalcParser::ExpressionLineContext* ctx) override;
 
+    antlrcpp::Any visitBnotExpr(CalcParser::BnotExprContext* ctx) override;
+    antlrcpp::Any visitBeqExpr(CalcParser::BeqExprContext* ctx) override;
+    antlrcpp::Any visitBneqExpr(CalcParser::BneqExprContext* ctx) override;
+    antlrcpp::Any visitBltExpr(CalcParser::BltExprContext* ctx) override;
+    antlrcpp::Any visitBrtExpr(CalcParser::BrtExprContext* ctx) override;
+    antlrcpp::Any visitBlteExpr(CalcParser::BlteExprContext* ctx) override;
+    antlrcpp::Any visitBrteExpr(CalcParser::BrteExprContext* ctx) override;
+    antlrcpp::Any visitBorExpr(CalcParser::BorExprContext* ctx) override;
+    antlrcpp::Any visitBandExpr(CalcParser::BandExprContext* ctx) override;
+
     antlrcpp::Any visitEqExpr(CalcParser::EqExprContext* ctx) override;
     antlrcpp::Any visitAddExpr(CalcParser::AddExprContext* ctx) override;
     antlrcpp::Any visitSubExpr(CalcParser::SubExprContext* ctx) override;

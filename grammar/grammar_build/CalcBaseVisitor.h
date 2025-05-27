@@ -27,7 +27,15 @@ public:
     return visitChildren(ctx);
   }
 
-  virtual std::any visitEqExpr(CalcParser::EqExprContext *ctx) override {
+  virtual std::any visitBrteExpr(CalcParser::BrteExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBlteExpr(CalcParser::BlteExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBneqExpr(CalcParser::BneqExprContext *ctx) override {
     return visitChildren(ctx);
   }
 
@@ -36,6 +44,34 @@ public:
   }
 
   virtual std::any visitAddExpr(CalcParser::AddExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBandExpr(CalcParser::BandExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBeqExpr(CalcParser::BeqExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBnotExpr(CalcParser::BnotExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBltExpr(CalcParser::BltExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitEqExpr(CalcParser::EqExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBorExpr(CalcParser::BorExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBrtExpr(CalcParser::BrtExprContext *ctx) override {
     return visitChildren(ctx);
   }
 

@@ -12,6 +12,15 @@ line
 
 expr
     : variable EQ expr					#EqExpr
+    | BNOT expr						#BnotExpr
+    | expr BEQ expr					#BeqExpr
+    | expr BNEQ expr					#BneqExpr
+    | expr BLT expr					#BltExpr
+    | expr BRT expr					#BrtExpr
+    | expr BLTE expr					#BlteExpr
+    | expr BRTE expr					#BrteExpr
+    | expr BOR expr					#BorExpr
+    | expr BAND expr					#BandExpr
     | expr PLUS term					#AddExpr
     | expr MINUS term					#SubExpr
     | term						#TermExpr
@@ -60,10 +69,24 @@ DIV   : '/' ;
 
 EQ    : '=' ;
 
+BAND : '&&';
+BOR : '||';
+BNOT : '!';
+
+BEQ    : '==' ;
+BNEQ   : '!=' ;
+BLT    : '<'  ;
+BRT    : '>'  ;
+BLTE   : '<=' ;
+BRTE   : '>=' ;
+
 DOT   : '.' ;
 COMMA : ',' ;
 
 LBRACKET : '(' ;
 RBRACKET : ')' ;
+
+LFBRACKET : '{' ;
+RFBRACKET : '}' ;
 
 SEP : ';' ;

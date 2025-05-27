@@ -25,14 +25,41 @@ public:
   virtual void enterTermExpr(CalcParser::TermExprContext * /*ctx*/) override { }
   virtual void exitTermExpr(CalcParser::TermExprContext * /*ctx*/) override { }
 
-  virtual void enterEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
-  virtual void exitEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
+  virtual void enterBrteExpr(CalcParser::BrteExprContext * /*ctx*/) override { }
+  virtual void exitBrteExpr(CalcParser::BrteExprContext * /*ctx*/) override { }
+
+  virtual void enterBlteExpr(CalcParser::BlteExprContext * /*ctx*/) override { }
+  virtual void exitBlteExpr(CalcParser::BlteExprContext * /*ctx*/) override { }
+
+  virtual void enterBneqExpr(CalcParser::BneqExprContext * /*ctx*/) override { }
+  virtual void exitBneqExpr(CalcParser::BneqExprContext * /*ctx*/) override { }
 
   virtual void enterSubExpr(CalcParser::SubExprContext * /*ctx*/) override { }
   virtual void exitSubExpr(CalcParser::SubExprContext * /*ctx*/) override { }
 
   virtual void enterAddExpr(CalcParser::AddExprContext * /*ctx*/) override { }
   virtual void exitAddExpr(CalcParser::AddExprContext * /*ctx*/) override { }
+
+  virtual void enterBandExpr(CalcParser::BandExprContext * /*ctx*/) override { }
+  virtual void exitBandExpr(CalcParser::BandExprContext * /*ctx*/) override { }
+
+  virtual void enterBeqExpr(CalcParser::BeqExprContext * /*ctx*/) override { }
+  virtual void exitBeqExpr(CalcParser::BeqExprContext * /*ctx*/) override { }
+
+  virtual void enterBnotExpr(CalcParser::BnotExprContext * /*ctx*/) override { }
+  virtual void exitBnotExpr(CalcParser::BnotExprContext * /*ctx*/) override { }
+
+  virtual void enterBltExpr(CalcParser::BltExprContext * /*ctx*/) override { }
+  virtual void exitBltExpr(CalcParser::BltExprContext * /*ctx*/) override { }
+
+  virtual void enterEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
+  virtual void exitEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
+
+  virtual void enterBorExpr(CalcParser::BorExprContext * /*ctx*/) override { }
+  virtual void exitBorExpr(CalcParser::BorExprContext * /*ctx*/) override { }
+
+  virtual void enterBrtExpr(CalcParser::BrtExprContext * /*ctx*/) override { }
+  virtual void exitBrtExpr(CalcParser::BrtExprContext * /*ctx*/) override { }
 
   virtual void enterMulTerm(CalcParser::MulTermContext * /*ctx*/) override { }
   virtual void exitMulTerm(CalcParser::MulTermContext * /*ctx*/) override { }

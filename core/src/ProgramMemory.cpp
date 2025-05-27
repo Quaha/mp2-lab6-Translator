@@ -16,10 +16,6 @@ Data MemoryManager::callFunction(const std::string& fname, std::vector<Data> arg
 }
 
 void MemoryManager::setVariableValue(const std::string& vname, Data data) {
-    if (variables[vname].checkFlags(DataFlags::Const)) {
-        throw std::runtime_error("It is forbidden to change the const value!");
-    }
-
     variables[vname] = data;
 }
 

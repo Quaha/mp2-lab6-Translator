@@ -25,11 +25,29 @@ public:
 
     virtual std::any visitTermExpr(CalcParser::TermExprContext *context) = 0;
 
-    virtual std::any visitEqExpr(CalcParser::EqExprContext *context) = 0;
+    virtual std::any visitBrteExpr(CalcParser::BrteExprContext *context) = 0;
+
+    virtual std::any visitBlteExpr(CalcParser::BlteExprContext *context) = 0;
+
+    virtual std::any visitBneqExpr(CalcParser::BneqExprContext *context) = 0;
 
     virtual std::any visitSubExpr(CalcParser::SubExprContext *context) = 0;
 
     virtual std::any visitAddExpr(CalcParser::AddExprContext *context) = 0;
+
+    virtual std::any visitBandExpr(CalcParser::BandExprContext *context) = 0;
+
+    virtual std::any visitBeqExpr(CalcParser::BeqExprContext *context) = 0;
+
+    virtual std::any visitBnotExpr(CalcParser::BnotExprContext *context) = 0;
+
+    virtual std::any visitBltExpr(CalcParser::BltExprContext *context) = 0;
+
+    virtual std::any visitEqExpr(CalcParser::EqExprContext *context) = 0;
+
+    virtual std::any visitBorExpr(CalcParser::BorExprContext *context) = 0;
+
+    virtual std::any visitBrtExpr(CalcParser::BrtExprContext *context) = 0;
 
     virtual std::any visitMulTerm(CalcParser::MulTermContext *context) = 0;
 

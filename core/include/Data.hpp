@@ -10,12 +10,11 @@ class Data {
 private:
 	DataType type;
 	std::any data;
-	flag_t flags;
 
 public:
 
 	Data();
-	Data(DataType type, std::any data, flag_t flags = DataFlags::None);
+	Data(DataType type, std::any data);
 
 	template<typename T> T as() const {
 		try {
@@ -28,15 +27,9 @@ public:
 
 	DataType getDataType() const;
 	std::any getData() const;
-	flag_t getFlags() const;
 
 	void setDataType(DataType type);
 	void setData(std::any data);
-	void setFlags(flag_t flags);
-
-	bool checkFlags(flag_t flags) const;
-
-	bool isCorrect() const;
 
 	void makeNumber();
 
@@ -44,6 +37,8 @@ public:
 
 	void makeInteger();
 	void makeReal();
+
+	void makeBool();
 
 	friend std::ostream& operator<<(std::ostream& os, Data data);
 };
