@@ -1,4 +1,4 @@
-#include <gtest/gtest.h>
+﻿#include <gtest/gtest.h>
 
 #include <cmath>
 
@@ -423,6 +423,24 @@ TEST(Interpreter, Variable3) {
 TEST(Interpreter, Variable4) {
 
     std::string input = "a=5;a+b;";
+
+    EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
+
+    clearMemory();
+}
+
+TEST(Interpreter, Variable5) {
+
+    std::string input = "a=5;delete(a);a;";
+
+    EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
+
+    clearMemory();
+}
+
+TEST(Interpreter, Variable6) {
+
+    std::string input = "delete(a);";
 
     EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
 

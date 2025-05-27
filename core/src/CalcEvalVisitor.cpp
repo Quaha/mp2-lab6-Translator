@@ -1,9 +1,9 @@
-#include <vector>
+﻿#include <vector>
 
 #include "CalcEvalVisitor.hpp"
 
 #include "Data.hpp"
-#include "DataMath.hpp"
+#include "DataFunctions.hpp"
 #include "ProgramMemory.hpp"
 
 antlrcpp::Any CalcEvalVisitor::visitExProgram(CalcParser::ExProgramContext* ctx) {
@@ -36,14 +36,14 @@ antlrcpp::Any CalcEvalVisitor::visitAddExpr(CalcParser::AddExprContext* ctx) {
     Data lhs = std::any_cast<Data>(visit(ctx->expr()));
     Data rhs = std::any_cast<Data>(visit(ctx->term()));
 
-    return DataMath::add(lhs, rhs);
+    return DataFunctions::add(lhs, rhs);
 }
 
 antlrcpp::Any CalcEvalVisitor::visitSubExpr(CalcParser::SubExprContext* ctx) {
     Data lhs = std::any_cast<Data>(visit(ctx->expr()));
     Data rhs = std::any_cast<Data>(visit(ctx->term()));
 
-    return DataMath::sub(lhs, rhs);
+    return DataFunctions::sub(lhs, rhs);
 }
 
 antlrcpp::Any CalcEvalVisitor::visitTermExpr(CalcParser::TermExprContext* ctx) {
@@ -54,14 +54,14 @@ antlrcpp::Any CalcEvalVisitor::visitMulTerm(CalcParser::MulTermContext* ctx) {
     Data lhs = std::any_cast<Data>(visit(ctx->term()));
     Data rhs = std::any_cast<Data>(visit(ctx->factor()));
 
-    return DataMath::mul(lhs, rhs);
+    return DataFunctions::mul(lhs, rhs);
 }
 
 antlrcpp::Any CalcEvalVisitor::visitDivTerm(CalcParser::DivTermContext* ctx) {
     Data lhs = std::any_cast<Data>(visit(ctx->term()));
     Data rhs = std::any_cast<Data>(visit(ctx->factor()));
 
-    return DataMath::div(lhs, rhs);
+    return DataFunctions::div(lhs, rhs);
 }
 
 antlrcpp::Any CalcEvalVisitor::visitPrimaryTerm(CalcParser::PrimaryTermContext* ctx) {
@@ -73,7 +73,7 @@ antlrcpp::Any CalcEvalVisitor::visitPlusPrimary(CalcParser::PlusPrimaryContext* 
 }
 
 antlrcpp::Any CalcEvalVisitor::visitMinusPrimary(CalcParser::MinusPrimaryContext* ctx) {
-    return DataMath::uminus(std::any_cast<Data>(visit(ctx->factor())));
+    return DataFunctions::uminus(std::any_cast<Data>(visit(ctx->factor())));
 }
 
 antlrcpp::Any CalcEvalVisitor::visitFactPrimary(CalcParser::FactPrimaryContext* ctx) {
