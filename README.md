@@ -201,4 +201,5 @@ while (i < N) {
 >> 89
 >> 97
 ```
-
+### Вид интерфейса
+![image](https://github.com/user-attachments/assets/d3371a53-0c20-4e72-92db-f253b661b445)
