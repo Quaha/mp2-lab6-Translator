@@ -23,6 +23,9 @@ public:
   virtual void enterTermExpr(CalcParser::TermExprContext *ctx) = 0;
   virtual void exitTermExpr(CalcParser::TermExprContext *ctx) = 0;
 
+  virtual void enterEqExpr(CalcParser::EqExprContext *ctx) = 0;
+  virtual void exitEqExpr(CalcParser::EqExprContext *ctx) = 0;
+
   virtual void enterSubExpr(CalcParser::SubExprContext *ctx) = 0;
   virtual void exitSubExpr(CalcParser::SubExprContext *ctx) = 0;
 
@@ -56,8 +59,14 @@ public:
   virtual void enterNumberFactor(CalcParser::NumberFactorContext *ctx) = 0;
   virtual void exitNumberFactor(CalcParser::NumberFactorContext *ctx) = 0;
 
+  virtual void enterVariableFactor(CalcParser::VariableFactorContext *ctx) = 0;
+  virtual void exitVariableFactor(CalcParser::VariableFactorContext *ctx) = 0;
+
   virtual void enterFunctionCall(CalcParser::FunctionCallContext *ctx) = 0;
   virtual void exitFunctionCall(CalcParser::FunctionCallContext *ctx) = 0;
+
+  virtual void enterVarName(CalcParser::VarNameContext *ctx) = 0;
+  virtual void exitVarName(CalcParser::VarNameContext *ctx) = 0;
 
   virtual void enterIntNumber(CalcParser::IntNumberContext *ctx) = 0;
   virtual void exitIntNumber(CalcParser::IntNumberContext *ctx) = 0;

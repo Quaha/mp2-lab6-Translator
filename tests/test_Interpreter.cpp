@@ -3,6 +3,7 @@
 #include <cmath>
 
 #include "Interpreter.hpp"
+#include "ProgramMemory.hpp"
 
 TEST(Interpreter, IntegerNumber1) {
 
@@ -368,4 +369,62 @@ TEST(Interpreter, AbsFunction5) {
     EXPECT_NO_THROW(result = result_vector[0].as<real_t>());
 
     EXPECT_TRUE((-5.5 - result) < EPS);
+}
+
+TEST(Interpreter, Variable1) {
+
+    std::string input = "a=1;a;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    EXPECT_EQ(result1, 1);
+    EXPECT_EQ(result2, 1);
+
+    clearMemory();
+}
+
+TEST(Interpreter, Variable2) {
+
+    std::string input = "a=b=1;a;b;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    integer_t result3;
+    EXPECT_NO_THROW(result3 = result_vector[2].as<integer_t>());
+
+    EXPECT_EQ(result1, 1);
+    EXPECT_EQ(result2, 1);
+    EXPECT_EQ(result3, 1);
+
+    clearMemory();
+}
+
+TEST(Interpreter, Variable3) {
+
+    std::string input = "a;";
+
+    EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
+
+    clearMemory();
+}
+
+TEST(Interpreter, Variable4) {
+
+    std::string input = "a=5;a+b;";
+
+    EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
+
+    clearMemory();
 }

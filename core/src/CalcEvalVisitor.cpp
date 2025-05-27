@@ -10,12 +10,26 @@ antlrcpp::Any CalcEvalVisitor::visitExProgram(CalcParser::ExProgramContext* ctx)
     std::vector<Data> data;
     for (auto lineCtx : ctx->line()) {
         data.push_back(std::any_cast<Data>(visit(lineCtx)));
+
+        if (data.back().getDataType() == DataType::VARIABLE) {
+            data.back().makeNumber();
+        }
     }
+
     return data;
 }
 
 antlrcpp::Any CalcEvalVisitor::visitExpressionLine(CalcParser::ExpressionLineContext* ctx) {
     return visit(ctx->expr());
+}
+
+antlrcpp::Any CalcEvalVisitor::visitEqExpr(CalcParser::EqExprContext* ctx) {
+    Data var = std::any_cast<Data>(visit(ctx->variable()));
+
+    Data data = std::any_cast<Data>(visit(ctx->expr()));
+    ProgramMemory.setVariableValue(var.as<std::string>(), data);
+
+    return data;
 }
 
 antlrcpp::Any CalcEvalVisitor::visitAddExpr(CalcParser::AddExprContext* ctx) {
@@ -51,11 +65,11 @@ antlrcpp::Any CalcEvalVisitor::visitDivTerm(CalcParser::DivTermContext* ctx) {
 }
 
 antlrcpp::Any CalcEvalVisitor::visitPrimaryTerm(CalcParser::PrimaryTermContext* ctx) {
-    return std::any_cast<Data>(visit(ctx->primary()));
+    return visit(ctx->primary());
 }
 
 antlrcpp::Any CalcEvalVisitor::visitPlusPrimary(CalcParser::PlusPrimaryContext* ctx) {
-    return std::any_cast<Data>(visit(ctx->factor()));
+    return visit(ctx->factor());
 }
 
 antlrcpp::Any CalcEvalVisitor::visitMinusPrimary(CalcParser::MinusPrimaryContext* ctx) {
@@ -63,19 +77,23 @@ antlrcpp::Any CalcEvalVisitor::visitMinusPrimary(CalcParser::MinusPrimaryContext
 }
 
 antlrcpp::Any CalcEvalVisitor::visitFactPrimary(CalcParser::FactPrimaryContext* ctx) {
-    return std::any_cast<Data>(visit(ctx->factor()));
+    return visit(ctx->factor());
 }
 
 antlrcpp::Any CalcEvalVisitor::visitFunctionFactor(CalcParser::FunctionFactorContext* ctx) {
-    return std::any_cast<Data>(visit(ctx->function()));
+    return visit(ctx->function());
 }
 
 antlrcpp::Any CalcEvalVisitor::visitBracketFactor(CalcParser::BracketFactorContext* ctx) {
-    return std::any_cast<Data>(visit(ctx->expr()));
+    return visit(ctx->expr());
 }
 
 antlrcpp::Any CalcEvalVisitor::visitNumberFactor(CalcParser::NumberFactorContext* ctx) {
-    return std::any_cast<Data>(visit(ctx->number()));
+    return visit(ctx->number());
+}
+
+antlrcpp::Any CalcEvalVisitor::visitVariableFactor(CalcParser::VariableFactorContext* ctx) {
+    return visit(ctx->variable());
 }
 
 antlrcpp::Any CalcEvalVisitor::visitFunctionCall(CalcParser::FunctionCallContext* ctx) {
@@ -87,6 +105,14 @@ antlrcpp::Any CalcEvalVisitor::visitFunctionCall(CalcParser::FunctionCallContext
         args.push_back(arg);
     }
     return ProgramMemory.callFunction(fname, args);
+}
+
+antlrcpp::Any CalcEvalVisitor::visitVarName(CalcParser::VarNameContext* ctx) {
+    std::string vname = ctx->NAME()->getText();
+
+    Data data(DataType::VARIABLE, vname);
+
+    return data;
 }
 
 antlrcpp::Any CalcEvalVisitor::visitIntNumber(CalcParser::IntNumberContext* ctx) {

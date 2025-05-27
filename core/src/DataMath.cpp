@@ -8,10 +8,6 @@ namespace DataMath {
 	Data uminus(Data lhs) {
 		lhs.makeNumber();
 
-		if (!lhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::uminus() function!");
-		}
-
 		if (lhs.getDataType() == DataType::INTEGER) {
 			lhs.setData(-lhs.as<integer_t>());
 		}
@@ -25,13 +21,6 @@ namespace DataMath {
 	Data add(Data lhs, Data rhs) {
 		lhs.makeNumber();
 		rhs.makeNumber();
-
-		if (!lhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::add() function!");
-		}
-		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of rhs in DataMath::add() function!");
-		}
 
 		Data result;
 
@@ -55,13 +44,6 @@ namespace DataMath {
 		lhs.makeNumber();
 		rhs.makeNumber();
 
-		if (!lhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::sub() function!");
-		}
-		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of rhs in DataMath::sub() function!");
-		}
-
 		Data result;
 
 		if (lhs.getDataType() == DataType::INTEGER && rhs.getDataType() == DataType::INTEGER) {
@@ -83,13 +65,6 @@ namespace DataMath {
 		lhs.makeNumber();
 		rhs.makeNumber();
 
-		if (!lhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::mul() function!");
-		}
-		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of rhs in DataMath::mul() function!");
-		}
-
 		Data result;
 
 		if (lhs.getDataType() == DataType::INTEGER && rhs.getDataType() == DataType::INTEGER) {
@@ -110,13 +85,6 @@ namespace DataMath {
 	Data div(Data lhs, Data rhs) {
 		lhs.makeNumber();
 		rhs.makeNumber();
-
-		if (!lhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of lhs in DataMath::div() function!");
-		}
-		if (!rhs.isCorrect()) {
-			throw std::runtime_error("Invalid type of rhs in DataMath::div() function!");
-		}
 
 		Data result;
 
@@ -147,12 +115,6 @@ namespace DataMath {
 
 		for (int i = 0; i < N; i++) {
 			args[i].makeNumber();
-		}
-
-		for (int i = 0; i < N; i++) {
-			if (!args[i].isCorrect()) {
-				throw std::runtime_error("Invalid type of arg in DataMath::SUM() function!");
-			}
 		}
 
 		bool any_real = false;

@@ -25,6 +25,9 @@ public:
   virtual void enterTermExpr(CalcParser::TermExprContext * /*ctx*/) override { }
   virtual void exitTermExpr(CalcParser::TermExprContext * /*ctx*/) override { }
 
+  virtual void enterEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
+  virtual void exitEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
+
   virtual void enterSubExpr(CalcParser::SubExprContext * /*ctx*/) override { }
   virtual void exitSubExpr(CalcParser::SubExprContext * /*ctx*/) override { }
 
@@ -58,8 +61,14 @@ public:
   virtual void enterNumberFactor(CalcParser::NumberFactorContext * /*ctx*/) override { }
   virtual void exitNumberFactor(CalcParser::NumberFactorContext * /*ctx*/) override { }
 
+  virtual void enterVariableFactor(CalcParser::VariableFactorContext * /*ctx*/) override { }
+  virtual void exitVariableFactor(CalcParser::VariableFactorContext * /*ctx*/) override { }
+
   virtual void enterFunctionCall(CalcParser::FunctionCallContext * /*ctx*/) override { }
   virtual void exitFunctionCall(CalcParser::FunctionCallContext * /*ctx*/) override { }
+
+  virtual void enterVarName(CalcParser::VarNameContext * /*ctx*/) override { }
+  virtual void exitVarName(CalcParser::VarNameContext * /*ctx*/) override { }
 
   virtual void enterIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }
   virtual void exitIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }
