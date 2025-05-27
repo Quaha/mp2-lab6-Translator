@@ -15,11 +15,31 @@
 class  CalcBaseVisitor : public CalcVisitor {
 public:
 
+  virtual std::any visitProgStart(CalcParser::ProgStartContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitExProgram(CalcParser::ExProgramContext *ctx) override {
     return visitChildren(ctx);
   }
 
   virtual std::any visitExpressionLine(CalcParser::ExpressionLineContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitIfExpr(CalcParser::IfExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitWhileExpr(CalcParser::WhileExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitEqExpr(CalcParser::EqExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitOExpr(CalcParser::OExprContext *ctx) override {
     return visitChildren(ctx);
   }
 
@@ -36,6 +56,14 @@ public:
   }
 
   virtual std::any visitBneqExpr(CalcParser::BneqExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBltExpr(CalcParser::BltExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitBorExpr(CalcParser::BorExprContext *ctx) override {
     return visitChildren(ctx);
   }
 
@@ -59,23 +87,19 @@ public:
     return visitChildren(ctx);
   }
 
-  virtual std::any visitBltExpr(CalcParser::BltExprContext *ctx) override {
-    return visitChildren(ctx);
-  }
-
-  virtual std::any visitEqExpr(CalcParser::EqExprContext *ctx) override {
-    return visitChildren(ctx);
-  }
-
-  virtual std::any visitBorExpr(CalcParser::BorExprContext *ctx) override {
-    return visitChildren(ctx);
-  }
-
   virtual std::any visitBrtExpr(CalcParser::BrtExprContext *ctx) override {
     return visitChildren(ctx);
   }
 
+  virtual std::any visitVarName(CalcParser::VarNameContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitMulTerm(CalcParser::MulTermContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitMDivTerm(CalcParser::MDivTermContext *ctx) override {
     return visitChildren(ctx);
   }
 
@@ -116,10 +140,6 @@ public:
   }
 
   virtual std::any visitFunctionCall(CalcParser::FunctionCallContext *ctx) override {
-    return visitChildren(ctx);
-  }
-
-  virtual std::any visitVarName(CalcParser::VarNameContext *ctx) override {
     return visitChildren(ctx);
   }
 

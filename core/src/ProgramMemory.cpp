@@ -43,6 +43,7 @@ void initMemory() {
     ProgramMemory.functions["sum"] = &DataFunctions::SUM;
     ProgramMemory.functions["abs"] = &DataFunctions::ABS;
     ProgramMemory.functions["delete"] = &DataFunctions::DEL_VAR;
+    ProgramMemory.functions["print"] = &DataFunctions::PRINT;
 }
 
 void clearMemory() {

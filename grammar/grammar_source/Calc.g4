@@ -2,63 +2,82 @@ grammar Calc;
 
 WS : [ \t\r\n]+ -> skip ;
 
+pstart
+    : program												#ProgStart
+    ;
+
 program
-    : (line SEP)* EOF					#ExProgram
+    : (line SEP)* (EOF)?										#ExProgram
     ;
 
 line
-    : expr						#ExpressionLine
+    : expr												#ExpressionLine
     ;
 
 expr
-    : variable EQ expr					#EqExpr
-    | BNOT expr						#BnotExpr
-    | expr BEQ expr					#BeqExpr
-    | expr BNEQ expr					#BneqExpr
-    | expr BLT expr					#BltExpr
-    | expr BRT expr					#BrtExpr
-    | expr BLTE expr					#BlteExpr
-    | expr BRTE expr					#BrteExpr
-    | expr BOR expr					#BorExpr
-    | expr BAND expr					#BandExpr
-    | expr PLUS term					#AddExpr
-    | expr MINUS term					#SubExpr
-    | term						#TermExpr
+    : IF LBRACKET expr RBRACKET LFBRACKET program RFBRACKET (ELSE LFBRACKET program RFBRACKET)?		#IfExpr
+    | WHILE LBRACKET expr RBRACKET LFBRACKET program RFBRACKET						#WhileExpr
+    | variable EQ expr											#EqExpr
+    | oexpr												#OExpr
     ;
 
-term
-    : term MUL factor           			#MulTerm
-    | term DIV factor					#DivTerm
-    | primary						#PrimaryTerm
-    ;
-
-primary
-    : PLUS factor					#PlusPrimary
-    | MINUS factor					#MinusPrimary
-    | factor						#FactPrimary
-    ;
-
-factor
-    : LBRACKET expr RBRACKET    			#BracketFactor
-    | function						#FunctionFactor
-    | number						#NumberFactor
-    | variable						#VariableFactor
-    ;
-
-function
-    : NAME LBRACKET (expr (COMMA expr)*)? RBRACKET  	#FunctionCall
+oexpr
+    : BNOT oexpr											#BnotExpr
+    | oexpr BEQ oexpr											#BeqExpr
+    | oexpr BNEQ oexpr											#BneqExpr
+    | oexpr BLT oexpr											#BltExpr
+    | oexpr BRT oexpr											#BrtExpr
+    | oexpr BLTE oexpr											#BlteExpr
+    | oexpr BRTE oexpr											#BrteExpr
+    | oexpr BOR oexpr											#BorExpr
+    | oexpr BAND oexpr											#BandExpr
+    | oexpr PLUS term											#AddExpr
+    | oexpr MINUS term											#SubExpr
+    | term												#TermExpr
     ;
 
 variable
-    : NAME						#VarName
+    : NAME												#VarName
+    ;
+
+
+term
+    : term MUL factor           									#MulTerm
+    | term DIV factor											#DivTerm
+    | term MDIV factor											#MDivTerm
+    | primary												#PrimaryTerm
+    ;
+
+primary
+    : PLUS factor											#PlusPrimary
+    | MINUS factor											#MinusPrimary
+    | factor												#FactPrimary
+    ;
+
+factor
+    : LBRACKET expr RBRACKET    									#BracketFactor
+    | function												#FunctionFactor
+    | number												#NumberFactor
+    | variable												#VariableFactor
+    ;
+
+function
+    : NAME LBRACKET (expr (COMMA expr)*)? RBRACKET  							#FunctionCall
     ;
 
 number
-    : INT						#IntNumber
-    | INT DOT INT					#RealNumber
+    : INT												#IntNumber
+    | INT DOT INT											#RealNumber
     ;
 
 INT : [0-9]+ ;
+
+IF : 'if' ;
+ELSE : 'else' ;
+
+WHILE : 'while' ;
+
+EQ    : '=' ;
 
 NAME : [a-zA-Z_][a-zA-Z0-9_]* ;
 
@@ -66,8 +85,7 @@ PLUS  : '+' ;
 MINUS : '-' ;
 MUL   : '*' ;
 DIV   : '/' ;
-
-EQ    : '=' ;
+MDIV  : '%' ;
 
 BAND : '&&';
 BOR : '||';
@@ -88,5 +106,6 @@ RBRACKET : ')' ;
 
 LFBRACKET : '{' ;
 RFBRACKET : '}' ;
+
 
 SEP : ';' ;

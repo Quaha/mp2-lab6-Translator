@@ -16,11 +16,26 @@
 class  CalcBaseListener : public CalcListener {
 public:
 
+  virtual void enterProgStart(CalcParser::ProgStartContext * /*ctx*/) override { }
+  virtual void exitProgStart(CalcParser::ProgStartContext * /*ctx*/) override { }
+
   virtual void enterExProgram(CalcParser::ExProgramContext * /*ctx*/) override { }
   virtual void exitExProgram(CalcParser::ExProgramContext * /*ctx*/) override { }
 
   virtual void enterExpressionLine(CalcParser::ExpressionLineContext * /*ctx*/) override { }
   virtual void exitExpressionLine(CalcParser::ExpressionLineContext * /*ctx*/) override { }
+
+  virtual void enterIfExpr(CalcParser::IfExprContext * /*ctx*/) override { }
+  virtual void exitIfExpr(CalcParser::IfExprContext * /*ctx*/) override { }
+
+  virtual void enterWhileExpr(CalcParser::WhileExprContext * /*ctx*/) override { }
+  virtual void exitWhileExpr(CalcParser::WhileExprContext * /*ctx*/) override { }
+
+  virtual void enterEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
+  virtual void exitEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
+
+  virtual void enterOExpr(CalcParser::OExprContext * /*ctx*/) override { }
+  virtual void exitOExpr(CalcParser::OExprContext * /*ctx*/) override { }
 
   virtual void enterTermExpr(CalcParser::TermExprContext * /*ctx*/) override { }
   virtual void exitTermExpr(CalcParser::TermExprContext * /*ctx*/) override { }
@@ -33,6 +48,12 @@ public:
 
   virtual void enterBneqExpr(CalcParser::BneqExprContext * /*ctx*/) override { }
   virtual void exitBneqExpr(CalcParser::BneqExprContext * /*ctx*/) override { }
+
+  virtual void enterBltExpr(CalcParser::BltExprContext * /*ctx*/) override { }
+  virtual void exitBltExpr(CalcParser::BltExprContext * /*ctx*/) override { }
+
+  virtual void enterBorExpr(CalcParser::BorExprContext * /*ctx*/) override { }
+  virtual void exitBorExpr(CalcParser::BorExprContext * /*ctx*/) override { }
 
   virtual void enterSubExpr(CalcParser::SubExprContext * /*ctx*/) override { }
   virtual void exitSubExpr(CalcParser::SubExprContext * /*ctx*/) override { }
@@ -49,20 +70,17 @@ public:
   virtual void enterBnotExpr(CalcParser::BnotExprContext * /*ctx*/) override { }
   virtual void exitBnotExpr(CalcParser::BnotExprContext * /*ctx*/) override { }
 
-  virtual void enterBltExpr(CalcParser::BltExprContext * /*ctx*/) override { }
-  virtual void exitBltExpr(CalcParser::BltExprContext * /*ctx*/) override { }
-
-  virtual void enterEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
-  virtual void exitEqExpr(CalcParser::EqExprContext * /*ctx*/) override { }
-
-  virtual void enterBorExpr(CalcParser::BorExprContext * /*ctx*/) override { }
-  virtual void exitBorExpr(CalcParser::BorExprContext * /*ctx*/) override { }
-
   virtual void enterBrtExpr(CalcParser::BrtExprContext * /*ctx*/) override { }
   virtual void exitBrtExpr(CalcParser::BrtExprContext * /*ctx*/) override { }
 
+  virtual void enterVarName(CalcParser::VarNameContext * /*ctx*/) override { }
+  virtual void exitVarName(CalcParser::VarNameContext * /*ctx*/) override { }
+
   virtual void enterMulTerm(CalcParser::MulTermContext * /*ctx*/) override { }
   virtual void exitMulTerm(CalcParser::MulTermContext * /*ctx*/) override { }
+
+  virtual void enterMDivTerm(CalcParser::MDivTermContext * /*ctx*/) override { }
+  virtual void exitMDivTerm(CalcParser::MDivTermContext * /*ctx*/) override { }
 
   virtual void enterDivTerm(CalcParser::DivTermContext * /*ctx*/) override { }
   virtual void exitDivTerm(CalcParser::DivTermContext * /*ctx*/) override { }
@@ -93,9 +111,6 @@ public:
 
   virtual void enterFunctionCall(CalcParser::FunctionCallContext * /*ctx*/) override { }
   virtual void exitFunctionCall(CalcParser::FunctionCallContext * /*ctx*/) override { }
-
-  virtual void enterVarName(CalcParser::VarNameContext * /*ctx*/) override { }
-  virtual void exitVarName(CalcParser::VarNameContext * /*ctx*/) override { }
 
   virtual void enterIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }
   virtual void exitIntNumber(CalcParser::IntNumberContext * /*ctx*/) override { }

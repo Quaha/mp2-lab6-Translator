@@ -14,11 +14,26 @@
 class  CalcListener : public antlr4::tree::ParseTreeListener {
 public:
 
+  virtual void enterProgStart(CalcParser::ProgStartContext *ctx) = 0;
+  virtual void exitProgStart(CalcParser::ProgStartContext *ctx) = 0;
+
   virtual void enterExProgram(CalcParser::ExProgramContext *ctx) = 0;
   virtual void exitExProgram(CalcParser::ExProgramContext *ctx) = 0;
 
   virtual void enterExpressionLine(CalcParser::ExpressionLineContext *ctx) = 0;
   virtual void exitExpressionLine(CalcParser::ExpressionLineContext *ctx) = 0;
+
+  virtual void enterIfExpr(CalcParser::IfExprContext *ctx) = 0;
+  virtual void exitIfExpr(CalcParser::IfExprContext *ctx) = 0;
+
+  virtual void enterWhileExpr(CalcParser::WhileExprContext *ctx) = 0;
+  virtual void exitWhileExpr(CalcParser::WhileExprContext *ctx) = 0;
+
+  virtual void enterEqExpr(CalcParser::EqExprContext *ctx) = 0;
+  virtual void exitEqExpr(CalcParser::EqExprContext *ctx) = 0;
+
+  virtual void enterOExpr(CalcParser::OExprContext *ctx) = 0;
+  virtual void exitOExpr(CalcParser::OExprContext *ctx) = 0;
 
   virtual void enterTermExpr(CalcParser::TermExprContext *ctx) = 0;
   virtual void exitTermExpr(CalcParser::TermExprContext *ctx) = 0;
@@ -31,6 +46,12 @@ public:
 
   virtual void enterBneqExpr(CalcParser::BneqExprContext *ctx) = 0;
   virtual void exitBneqExpr(CalcParser::BneqExprContext *ctx) = 0;
+
+  virtual void enterBltExpr(CalcParser::BltExprContext *ctx) = 0;
+  virtual void exitBltExpr(CalcParser::BltExprContext *ctx) = 0;
+
+  virtual void enterBorExpr(CalcParser::BorExprContext *ctx) = 0;
+  virtual void exitBorExpr(CalcParser::BorExprContext *ctx) = 0;
 
   virtual void enterSubExpr(CalcParser::SubExprContext *ctx) = 0;
   virtual void exitSubExpr(CalcParser::SubExprContext *ctx) = 0;
@@ -47,20 +68,17 @@ public:
   virtual void enterBnotExpr(CalcParser::BnotExprContext *ctx) = 0;
   virtual void exitBnotExpr(CalcParser::BnotExprContext *ctx) = 0;
 
-  virtual void enterBltExpr(CalcParser::BltExprContext *ctx) = 0;
-  virtual void exitBltExpr(CalcParser::BltExprContext *ctx) = 0;
-
-  virtual void enterEqExpr(CalcParser::EqExprContext *ctx) = 0;
-  virtual void exitEqExpr(CalcParser::EqExprContext *ctx) = 0;
-
-  virtual void enterBorExpr(CalcParser::BorExprContext *ctx) = 0;
-  virtual void exitBorExpr(CalcParser::BorExprContext *ctx) = 0;
-
   virtual void enterBrtExpr(CalcParser::BrtExprContext *ctx) = 0;
   virtual void exitBrtExpr(CalcParser::BrtExprContext *ctx) = 0;
 
+  virtual void enterVarName(CalcParser::VarNameContext *ctx) = 0;
+  virtual void exitVarName(CalcParser::VarNameContext *ctx) = 0;
+
   virtual void enterMulTerm(CalcParser::MulTermContext *ctx) = 0;
   virtual void exitMulTerm(CalcParser::MulTermContext *ctx) = 0;
+
+  virtual void enterMDivTerm(CalcParser::MDivTermContext *ctx) = 0;
+  virtual void exitMDivTerm(CalcParser::MDivTermContext *ctx) = 0;
 
   virtual void enterDivTerm(CalcParser::DivTermContext *ctx) = 0;
   virtual void exitDivTerm(CalcParser::DivTermContext *ctx) = 0;
@@ -91,9 +109,6 @@ public:
 
   virtual void enterFunctionCall(CalcParser::FunctionCallContext *ctx) = 0;
   virtual void exitFunctionCall(CalcParser::FunctionCallContext *ctx) = 0;
-
-  virtual void enterVarName(CalcParser::VarNameContext *ctx) = 0;
-  virtual void exitVarName(CalcParser::VarNameContext *ctx) = 0;
 
   virtual void enterIntNumber(CalcParser::IntNumberContext *ctx) = 0;
   virtual void exitIntNumber(CalcParser::IntNumberContext *ctx) = 0;

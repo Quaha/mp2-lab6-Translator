@@ -107,6 +107,26 @@ namespace DataFunctions {
 		return result;
 	}
 
+	Data mdiv(Data lhs, Data rhs) {
+		lhs.makeNumber();
+		rhs.makeNumber();
+
+		Data result;
+
+		if (lhs.getDataType() == DataType::INTEGER && rhs.getDataType() == DataType::INTEGER) {
+			result.setDataType(DataType::INTEGER);
+			if (rhs.as<integer_t>() == 0) {
+				throw std::runtime_error("It is forbidden to divide by an integer 0!");
+			}
+			result.setData(lhs.as<integer_t>() % rhs.as<integer_t>());
+		}
+		else {
+			throw std::runtime_error("It is forbidden to use % operator with real numbers!");
+		}
+
+		return result;
+	}
+
 	Data bnot(Data lhs) {
 		lhs.makeBool();
 
@@ -276,6 +296,15 @@ namespace DataFunctions {
 			arg.setData(value);
 		}
 		return arg;
+	}
+
+	Data PRINT(std::vector<Data> args) {
+
+		for (Data data : args) {
+			std::cout << ">> " << data << std::endl;
+		}
+
+		return Data();
 	}
 
 	Data DEL_VAR(std::vector<Data> args) {
