@@ -26,4 +26,5 @@ enum DataType {
 enum DataFlags : flag_t {
 	None = 1 << 0,
 	IncorrectData = 1 << 1,
+	Const = 1 << 2,
 };

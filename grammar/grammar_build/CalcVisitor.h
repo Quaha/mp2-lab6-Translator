@@ -25,6 +25,8 @@ public:
 
     virtual std::any visitTermExpr(CalcParser::TermExprContext *context) = 0;
 
+    virtual std::any visitEqExpr(CalcParser::EqExprContext *context) = 0;
+
     virtual std::any visitSubExpr(CalcParser::SubExprContext *context) = 0;
 
     virtual std::any visitAddExpr(CalcParser::AddExprContext *context) = 0;
@@ -47,7 +49,11 @@ public:
 
     virtual std::any visitNumberFactor(CalcParser::NumberFactorContext *context) = 0;
 
+    virtual std::any visitVariableFactor(CalcParser::VariableFactorContext *context) = 0;
+
     virtual std::any visitFunctionCall(CalcParser::FunctionCallContext *context) = 0;
+
+    virtual std::any visitVarName(CalcParser::VarNameContext *context) = 0;
 
     virtual std::any visitIntNumber(CalcParser::IntNumberContext *context) = 0;
 

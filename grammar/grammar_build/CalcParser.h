@@ -12,13 +12,13 @@
 class  CalcParser : public antlr4::Parser {
 public:
   enum {
-    WS = 1, INT = 2, NAME = 3, PLUS = 4, MINUS = 5, MUL = 6, DIV = 7, DOT = 8, 
-    COMMA = 9, LBRACKET = 10, RBRACKET = 11, SEP = 12
+    WS = 1, INT = 2, NAME = 3, PLUS = 4, MINUS = 5, MUL = 6, DIV = 7, EQ = 8, 
+    DOT = 9, COMMA = 10, LBRACKET = 11, RBRACKET = 12, SEP = 13
   };
 
   enum {
     RuleProgram = 0, RuleLine = 1, RuleExpr = 2, RuleTerm = 3, RulePrimary = 4, 
-    RuleFactor = 5, RuleFunction = 6, RuleNumber = 7
+    RuleFactor = 5, RuleFunction = 6, RuleVariable = 7, RuleNumber = 8
   };
 
   explicit CalcParser(antlr4::TokenStream *input);
@@ -45,6 +45,7 @@ public:
   class PrimaryContext;
   class FactorContext;
   class FunctionContext;
+  class VariableContext;
   class NumberContext; 
 
   class  ProgramContext : public antlr4::ParserRuleContext {
@@ -121,6 +122,19 @@ public:
     TermExprContext(ExprContext *ctx);
 
     TermContext *term();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  class  EqExprContext : public ExprContext {
+  public:
+    EqExprContext(ExprContext *ctx);
+
+    VariableContext *variable();
+    antlr4::tree::TerminalNode *EQ();
+    ExprContext *expr();
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
 
@@ -270,6 +284,17 @@ public:
    
   };
 
+  class  VariableFactorContext : public FactorContext {
+  public:
+    VariableFactorContext(FactorContext *ctx);
+
+    VariableContext *variable();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
   class  BracketFactorContext : public FactorContext {
   public:
     BracketFactorContext(FactorContext *ctx);
@@ -338,6 +363,32 @@ public:
   };
 
   FunctionContext* function();
+
+  class  VariableContext : public antlr4::ParserRuleContext {
+  public:
+    VariableContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+   
+    VariableContext() = default;
+    void copyFrom(VariableContext *context);
+    using antlr4::ParserRuleContext::copyFrom;
+
+    virtual size_t getRuleIndex() const override;
+
+   
+  };
+
+  class  VarNameContext : public VariableContext {
+  public:
+    VarNameContext(VariableContext *ctx);
+
+    antlr4::tree::TerminalNode *NAME();
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+
+    virtual std::any accept(antlr4::tree::ParseTreeVisitor *visitor) override;
+  };
+
+  VariableContext* variable();
 
   class  NumberContext : public antlr4::ParserRuleContext {
   public:

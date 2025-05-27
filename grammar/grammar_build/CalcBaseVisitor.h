@@ -27,6 +27,10 @@ public:
     return visitChildren(ctx);
   }
 
+  virtual std::any visitEqExpr(CalcParser::EqExprContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitSubExpr(CalcParser::SubExprContext *ctx) override {
     return visitChildren(ctx);
   }
@@ -71,7 +75,15 @@ public:
     return visitChildren(ctx);
   }
 
+  virtual std::any visitVariableFactor(CalcParser::VariableFactorContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
   virtual std::any visitFunctionCall(CalcParser::FunctionCallContext *ctx) override {
+    return visitChildren(ctx);
+  }
+
+  virtual std::any visitVarName(CalcParser::VarNameContext *ctx) override {
     return visitChildren(ctx);
   }
 

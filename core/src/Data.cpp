@@ -1,4 +1,5 @@
 #include "Data.hpp"
+#include "ProgramMemory.hpp"
 
 Data::Data() {
 	this->type = DataType::NONE;
@@ -45,6 +46,22 @@ bool Data::isCorrect() const {
 }
 
 void Data::makeNumber() {
+	if (type == DataType::NONE) {
+		throw std::runtime_error("Invalid type of data in Data::makeNumber() function!");
+	}
+	if (type == DataType::VARIABLE) {
+		std::string vname = as<std::string>();
+
+		Data result = ProgramMemory.getVariableValue(vname);
+
+		if (!result.isNumber()) {
+			throw std::runtime_error("Invalid type of data in Data::makeNumber() function!");
+		}
+
+		type = result.getDataType();
+		data = result.getData();
+	}
+
 	flags = DataFlags::None;
 }
 
@@ -76,10 +93,6 @@ void Data::makeReal() {
 
 std::ostream& operator<<(std::ostream& os, Data data) {
 	data.makeNumber();
-
-	if (!data.isCorrect()) {
-		throw std::runtime_error("Invalid type of data in consoleDataOutput function!");
-	}
 
 	if (data.getDataType() == DataType::REAL) {
 		os << data.as<real_t>();

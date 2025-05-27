@@ -11,7 +11,8 @@ line
     ;
 
 expr
-    : expr PLUS term					#AddExpr
+    : variable EQ expr					#EqExpr
+    | expr PLUS term					#AddExpr
     | expr MINUS term					#SubExpr
     | term						#TermExpr
     ;
@@ -32,10 +33,15 @@ factor
     : LBRACKET expr RBRACKET    			#BracketFactor
     | function						#FunctionFactor
     | number						#NumberFactor
+    | variable						#VariableFactor
     ;
 
 function
     : NAME LBRACKET (expr (COMMA expr)*)? RBRACKET  	#FunctionCall
+    ;
+
+variable
+    : NAME						#VarName
     ;
 
 number
@@ -51,6 +57,8 @@ PLUS  : '+' ;
 MINUS : '-' ;
 MUL   : '*' ;
 DIV   : '/' ;
+
+EQ    : '=' ;
 
 DOT   : '.' ;
 COMMA : ',' ;
