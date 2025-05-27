@@ -89,6 +89,18 @@ TEST(Interpreter, IntegerDiv) {
     EXPECT_EQ(result, 45/16);
 }
 
+TEST(Interpreter, IntegerMDiv) {
+
+    std::string input = "12/5;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 12 % 5);
+}
+
 TEST(Interpreter, IntegerBrackets1) {
 
     std::string input = "(1);";
@@ -445,4 +457,208 @@ TEST(Interpreter, Variable6) {
     EXPECT_ANY_THROW(std::vector<Data> result_vector = processProgram(input));
 
     clearMemory();
+}
+
+TEST(Interpreter, Variable7) {
+
+    std::string input = "a=1;a=a+1;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    EXPECT_EQ(result1, 1);
+    EXPECT_EQ(result2, 2);
+
+    clearMemory();
+}
+
+TEST(Interpreter, Variable8) {
+
+    std::string input = "a=1;a=a;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    EXPECT_EQ(result1, 1);
+    EXPECT_EQ(result2, 1);
+
+    clearMemory();
+}
+
+TEST(Interpreter, Bool1) {
+
+    std::string input = "1<2;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool2) {
+
+    std::string input = "2<1;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0ll);
+}
+
+TEST(Interpreter, Bool3) {
+
+    std::string input = "1==2;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0);
+}
+
+TEST(Interpreter, Bool4) {
+
+    std::string input = "1==1;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool5) {
+
+    std::string input = "1!=2;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool6) {
+
+    std::string input = "1!=1;";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0);
+}
+
+TEST(Interpreter, Bool7) {
+
+    std::string input = "(1&&3)<=(1+4);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 1);
+}
+
+TEST(Interpreter, Bool8) {
+
+    std::string input = "(0||1)<=(0&&1);";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result;
+    EXPECT_NO_THROW(result = result_vector[0].as<integer_t>());
+
+    EXPECT_EQ(result, 0);
+}
+
+TEST(Interpreter, If1) {
+
+    std::string input = "if(1==1){1;};";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    EXPECT_EQ(result1, 1);
+    EXPECT_EQ(result2, 1);
+}
+
+TEST(Interpreter, If2) {
+
+    std::string input = "if(1==1){1;}else{2;};";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    EXPECT_EQ(result1, 1);
+    EXPECT_EQ(result2, 1);
+}
+
+TEST(Interpreter, If3) {
+
+    std::string input = "if(1==2){1;}else{2;};";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    EXPECT_EQ(result1, 2);
+    EXPECT_EQ(result2, 0);
+}
+
+TEST(Interpreter, While1) {
+
+    std::string input = "i=0;while(i<2){i=i+1;};";
+
+    std::vector<Data> result_vector = processProgram(input);
+
+    integer_t result1;
+    EXPECT_NO_THROW(result1 = result_vector[0].as<integer_t>());
+
+    integer_t result2;
+    EXPECT_NO_THROW(result2 = result_vector[1].as<integer_t>());
+
+    integer_t result3;
+    EXPECT_NO_THROW(result3 = result_vector[2].as<integer_t>());
+
+    integer_t result4;
+    EXPECT_NO_THROW(result4 = result_vector[3].as<integer_t>());
+
+    EXPECT_EQ(result1, 0);
+    EXPECT_EQ(result2, 1);
+    EXPECT_EQ(result3, 2);
+    EXPECT_EQ(result4, 2);
 }

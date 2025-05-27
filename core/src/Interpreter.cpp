@@ -26,7 +26,7 @@ std::vector<Data> processProgram(const std::string& input) {
     lexer.addErrorListener(errorListener.get());
     parser.addErrorListener(errorListener.get());
 
-    auto tree = parser.program();
+    auto tree = parser.pstart();
 
     CalcEvalVisitor visitor;
     std::vector<Data> result = std::any_cast<std::vector<Data>>(visitor.visit(tree));

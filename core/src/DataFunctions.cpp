@@ -107,6 +107,122 @@ namespace DataFunctions {
 		return result;
 	}
 
+	Data mdiv(Data lhs, Data rhs) {
+		lhs.makeNumber();
+		rhs.makeNumber();
+
+		Data result;
+
+		if (lhs.getDataType() == DataType::INTEGER && rhs.getDataType() == DataType::INTEGER) {
+			result.setDataType(DataType::INTEGER);
+			if (rhs.as<integer_t>() == 0) {
+				throw std::runtime_error("It is forbidden to divide by an integer 0!");
+			}
+			result.setData(lhs.as<integer_t>() % rhs.as<integer_t>());
+		}
+		else {
+			throw std::runtime_error("It is forbidden to use % operator with real numbers!");
+		}
+
+		return result;
+	}
+
+	Data bnot(Data lhs) {
+		lhs.makeBool();
+
+		integer_t result = lhs.as<integer_t>();
+
+		result ^= static_cast<integer_t>(1);
+
+		lhs.setData(result);
+
+		return lhs;
+	}
+
+	Data beq(Data lhs, Data rhs) {
+		lhs.makeNumber();
+		rhs.makeNumber();
+
+		Data result(DataType::INTEGER, static_cast<integer_t>(0));
+
+		if (lhs.getDataType() == DataType::INTEGER && rhs.getDataType() == DataType::INTEGER) {
+			if (lhs.as<integer_t>() == rhs.as<integer_t>()) {
+				result.setData(static_cast<integer_t>(1));
+			}
+		}
+		else {
+			lhs.makeReal();
+			rhs.makeReal();
+
+			if (std::abs(lhs.as<real_t>() - rhs.as<real_t>()) < EPS) {
+				result.setData(static_cast<integer_t>(1));
+			}
+		}
+		return result;
+	}
+
+	Data bneq(Data lhs, Data rhs) {
+		return bnot(beq(lhs, rhs));
+	}
+
+	Data blt(Data lhs, Data rhs) {
+		lhs.makeNumber();
+		rhs.makeNumber();
+
+		Data result(DataType::INTEGER, static_cast<integer_t>(0));
+
+		if (lhs.getDataType() == DataType::INTEGER && rhs.getDataType() == DataType::INTEGER) {
+			if (lhs.as<integer_t>() < rhs.as<integer_t>()) {
+				result.setData(static_cast<integer_t>(1));
+			}
+		}
+		else {
+			lhs.makeReal();
+			rhs.makeReal();
+
+			if (lhs.as<real_t>() < rhs.as<real_t>()) {
+				result.setData(static_cast<integer_t>(1));
+			}
+		}
+		return result;
+	}
+
+	Data brt(Data lhs, Data rhs) {
+		return blt(rhs, lhs);
+	}
+
+	Data blte(Data lhs, Data rhs) {
+		return bor(blt(lhs, rhs), beq(lhs, rhs));
+	}
+
+	Data brte(Data lhs, Data rhs) {
+		return blte(rhs, lhs);
+	}
+
+	Data bor(Data lhs, Data rhs) {
+		lhs.makeBool();
+		rhs.makeBool();
+
+		integer_t l = lhs.as<integer_t>();
+		integer_t r = rhs.as<integer_t>();
+
+		Data result(DataType::INTEGER, static_cast<integer_t>(l || r));
+
+		return result;
+	}
+
+	Data band(Data lhs, Data rhs) {
+		lhs.makeBool();
+		rhs.makeBool();
+
+		integer_t l = lhs.as<integer_t>();
+		integer_t r = rhs.as<integer_t>();
+
+		Data result(DataType::INTEGER, static_cast<integer_t>(l && r));
+
+		return result;
+	}
+
 	Data SUM(std::vector<Data> args) {
 		int N = args.size();
 
@@ -180,6 +296,15 @@ namespace DataFunctions {
 			arg.setData(value);
 		}
 		return arg;
+	}
+
+	Data PRINT(std::vector<Data> args) {
+
+		for (Data data : args) {
+			std::cout << ">> " << data << std::endl;
+		}
+
+		return Data();
 	}
 
 	Data DEL_VAR(std::vector<Data> args) {
