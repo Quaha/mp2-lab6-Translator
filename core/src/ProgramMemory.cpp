@@ -1,6 +1,6 @@
-#include "ProgramMemory.hpp"
+﻿#include "ProgramMemory.hpp"
 
-#include "DataMath.hpp"
+#include "DataFunctions.hpp"
 
 MemoryManager ProgramMemory;
 
@@ -30,6 +30,10 @@ Data MemoryManager::getVariableValue(const std::string& vname) {
     return variables[vname];
 }
 
+void MemoryManager::destroyVariable(const std::string& vname) {
+    variables.erase(vname);
+}
+
 bool MemoryManager::isInited() const {
     return is_init;
 }
@@ -40,9 +44,9 @@ void initMemory() {
     ProgramMemory.is_init = true;
 
     // Functions init
-    ProgramMemory.functions["sum"] = &DataMath::SUM;
-    ProgramMemory.functions["abs"] = &DataMath::ABS;
-
+    ProgramMemory.functions["sum"] = &DataFunctions::SUM;
+    ProgramMemory.functions["abs"] = &DataFunctions::ABS;
+    ProgramMemory.functions["delete"] = &DataFunctions::DEL_VAR;
 }
 
 void clearMemory() {

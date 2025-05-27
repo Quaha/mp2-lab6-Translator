@@ -1,9 +1,10 @@
-#include <vector>
+﻿#include <vector>
 #include <cmath>
 
-#include "DataMath.hpp"
+#include "DataFunctions.hpp"
+#include "ProgramMemory.hpp"
 
-namespace DataMath {
+namespace DataFunctions {
 
 	Data uminus(Data lhs) {
 		lhs.makeNumber();
@@ -110,7 +111,7 @@ namespace DataMath {
 		int N = args.size();
 
 		if (N == 0) {
-			throw std::runtime_error("Invalid count of args in DataMath::SUM() function!");
+			throw std::runtime_error("Invalid count of args in SUM() function!");
 		}
 
 		for (int i = 0; i < N; i++) {
@@ -158,7 +159,7 @@ namespace DataMath {
 		int N = args.size();
 
 		if (N != 1) {
-			throw std::runtime_error("Invalid count of args in DataMath::SUM() function!");
+			throw std::runtime_error("Invalid count of args in ABS() function!");
 		}
 		
 		Data arg = args[0];
@@ -179,5 +180,27 @@ namespace DataMath {
 			arg.setData(value);
 		}
 		return arg;
+	}
+
+	Data DEL_VAR(std::vector<Data> args) {
+
+		int N = args.size();
+
+		if (N != 1) {
+			throw std::runtime_error("Invalid count of args in DEL_VAR() function!");
+		}
+
+		Data arg = args[0];
+		if (arg.getDataType() != DataType::VARIABLE) {
+			throw std::runtime_error("Invalid type of arg in DEL_VAR() function!");
+		}
+
+		std::string vname = arg.as<std::string>();
+
+		Data result = ProgramMemory.getVariableValue(vname);
+		
+		ProgramMemory.destroyVariable(vname);
+
+		return result;
 	}
 }

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <vector>
 #include <string>
@@ -24,6 +24,7 @@ public:
 
 	void setVariableValue(const std::string& vname, Data data);
 	Data getVariableValue(const std::string& vname) ;
+	void destroyVariable(const std::string& vname);
 
 	bool isInited() const;
 
